@@ -1,0 +1,25 @@
+Cause: Increased frequency of forest fires; Effect: Reduction in biodiversity.
+Cause: Expansion of urban areas; Effect: Loss of wetlands.
+Cause: Rapid ocean acidification; Effect: Decreased coral reef resilience.
+Cause: Adoption of regenerative agriculture practices; Effect: Increased soil carbon sequestration.
+Cause: Extensive deforestation in tropical regions; Effect: Reduction in regional rainfall.
+Cause: Increased microplastic pollution; Effect: Decline in marine life populations.
+Cause: Widespread drought conditions; Effect: Reduced agricultural productivity.
+Cause: Intensified hurricane activity; Effect: Increased coastal infrastructure damage.
+Cause: Melting permafrost in polar regions; Effect: Increased methane release.
+Cause: Implementation of plastic bag bans; Effect: Reduction in plastic waste.
+Cause: Adoption of electric vehicles; Effect: Reduction in urban air pollution.
+Cause: Rising global average temperatures; Effect: Increased frequency of heatwaves.
+Cause: Extensive fertilizer runoff; Effect: Increased eutrophication in aquatic ecosystems.
+Cause: Enhanced public transportation infrastructure; Effect: Reduced urban greenhouse gas emissions.
+Cause: Rapid glacial retreat in mountainous regions; Effect: Reduced freshwater availability.
+Cause: Expansion of offshore wind farms; Effect: Increased renewable energy production.
+Cause: Increased urban heat islands due to construction; Effect: Elevated energy consumption for cooling.
+Cause: Development of large-scale solar farms; Effect: Habitat disruption for wildlife.
+Cause: Severe soil erosion due to intensive agriculture; Effect: Reduced land productivity.
+Cause: Adoption of stringent emissions regulations; Effect: Reduction in industrial pollution.
+Cause: Increased desalination plant operations; Effect: Increased brine discharge impacting marine ecosystems.
+Cause: Increased prevalence of invasive species due to global trade; Effect: Loss of native species.
+Cause: Expansion of protected marine reserves; Effect: Recovery of fish populations.
+Cause: Implementation of urban tree planting programs; Effect: Mitigation of urban air pollution.
+Cause: Rapid melting of Antarctic ice shelves; Effect: Acceleration of global sea-level rise.

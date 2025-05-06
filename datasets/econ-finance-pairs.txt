@@ -1,0 +1,25 @@
+Cause: Central bank raises interest rates; Effect: Consumer borrowing decreases.
+Cause: Introduction of algorithmic trading strategies; Effect: Increased volatility in financial markets.
+Cause: Tightening regulations on cryptocurrency exchanges; Effect: Reduced market liquidity.
+Cause: Increased international trade tariffs; Effect: Reduction in import-dependent industries' profitability.
+Cause: Rise in ESG (Environmental, Social, Governance) investing standards; Effect: Growth in sustainable investment funds.
+Cause: Implementation of remote work policies; Effect: Reduced corporate real estate expenditures.
+Cause: Enhanced data privacy legislation; Effect: Increased compliance costs for businesses.
+Cause: Adoption of central bank digital currencies (CBDCs); Effect: Decline in traditional cash usage.
+Cause: Escalation of geopolitical tensions; Effect: Increased prices of commodities such as oil.
+Cause: Rising inflation rates; Effect: Decrease in consumer purchasing power.
+Cause: Expansion of financial literacy education; Effect: Increased household savings rates.
+Cause: Growth of fintech lending platforms; Effect: Improved access to credit for small businesses.
+Cause: Sudden bankruptcy of major banks; Effect: Decline in investor confidence.
+Cause: Increased automation in financial auditing; Effect: Reduction in accounting errors.
+Cause: Reduction in government subsidies for renewable energy; Effect: Decreased private investment in solar power projects.
+Cause: Surge in remote banking services; Effect: Decline in physical bank branch numbers.
+Cause: Implementation of carbon taxes; Effect: Increased operational costs for heavy industries.
+Cause: Adoption of AI-driven credit scoring; Effect: Increased accuracy in loan approvals.
+Cause: Supply chain disruptions due to pandemics; Effect: Inflationary pressures on consumer goods.
+Cause: Expanded use of blockchain in supply chain finance; Effect: Improved transparency in transactions.
+Cause: Rise in housing market speculation; Effect: Increased risk of property price bubbles.
+Cause: Reduction of foreign direct investment due to economic sanctions; Effect: Slowed economic growth.
+Cause: Increased corporate mergers and acquisitions; Effect: Reduction in market competition.
+Cause: Strengthened anti-money laundering policies; Effect: Increased administrative overhead for banks.
+Cause: Shift towards digital payment systems; Effect: Reduced circulation of physical currency.
