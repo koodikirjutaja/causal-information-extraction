@@ -1,0 +1,77 @@
+{"id": "row0", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Central bank raises interest rates", "effect": "Consumer borrowing decreases"}}
+{"id": "row1", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Introduction of algorithmic trading strategies", "effect": "Increased volatility in financial markets"}}
+{"id": "row2", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Tightening regulations on cryptocurrency exchanges", "effect": "Reduced market liquidity"}}
+{"id": "row3", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased international trade tariffs", "effect": "Reduction in import-dependent industries' profitability"}}
+{"id": "row4", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Rise in ESG investing standards", "effect": "Growth in sustainable investment funds"}}
+{"id": "row5", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Implementation of remote work policies", "effect": "Reduced corporate real estate expenditures"}}
+{"id": "row6", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Enhanced data privacy legislation", "effect": "Increased compliance costs for businesses"}}
+{"id": "row7", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Adoption of central bank digital currencies (CBDCs)", "effect": "Decline in traditional cash usage"}}
+{"id": "row8", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Escalation of geopolitical tensions", "effect": "Increased prices of commodities such as oil"}}
+{"id": "row9", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Rising inflation rates", "effect": "Decrease in consumer purchasing power"}}
+{"id": "row10", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Expansion of financial literacy education", "effect": "Increased household savings rates"}}
+{"id": "row11", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Growth of fintech lending platforms", "effect": "Improved access to credit for small businesses"}}
+{"id": "row12", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Sudden bankruptcy of major banks", "effect": "Decline in investor confidence"}}
+{"id": "row13", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased automation in financial auditing", "effect": "Reduction in accounting errors"}}
+{"id": "row14", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Reduction in government subsidies for renewable energy", "effect": "Decreased private investment in solar power projects"}}
+{"id": "row15", "pred": {"cause": "the ongoing rise in remote banking services", "effect": ""}, "raw_response": "{\"cause\": \"the ongoing rise in remote banking services\",", "ground": {"cause": "Surge in remote banking services", "effect": "Decline in physical bank branch numbers"}}
+{"id": "row16", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Implementation of carbon taxes", "effect": "Increased operational costs for heavy industries"}}
+{"id": "row17", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Adoption of AI-driven credit scoring", "effect": "Increased accuracy in loan approvals"}}
+{"id": "row18", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Supply chain disruptions due to pandemics", "effect": "Inflationary pressures on consumer goods"}}
+{"id": "row19", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Expanded use of blockchain in supply chain finance", "effect": "Improved transparency in transactions"}}
+{"id": "row20", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Rise in housing market speculation", "effect": "Increased risk of property price bubbles"}}
+{"id": "row21", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Reduction of foreign direct investment due to economic sanctions", "effect": "Slowed economic growth"}}
+{"id": "row22", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased corporate mergers and acquisitions", "effect": "Reduction in market competition"}}
+{"id": "row23", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Strengthened anti-money laundering policies", "effect": "Increased administrative overhead for banks"}}
+{"id": "row24", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Shift towards digital payment systems", "effect": "Reduced circulation of physical currency"}}
+{"id": "row25", "pred": {"cause": "", "effect": ""}, "raw_response": "{}", "ground": {"cause": NaN, "effect": NaN}}
+{"id": "row26", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased frequency of forest fires", "effect": "Reduction in biodiversity"}}
+{"id": "row27", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Expansion of urban areas", "effect": "Loss of wetlands"}}
+{"id": "row28", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Rapid ocean acidification", "effect": "Decreased coral reef resilience"}}
+{"id": "row29", "pred": {"cause": "adoption", "effect": ""}, "raw_response": "{\"cause\": \"adoption", "ground": {"cause": "Adoption of regenerative agriculture practices", "effect": "Increased soil carbon sequestration"}}
+{"id": "row30", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Extensive deforestation in tropical regions", "effect": "Reduction in regional rainfall"}}
+{"id": "row31", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased microplastic pollution", "effect": "Decline in marine life populations"}}
+{"id": "row32", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Widespread drought conditions", "effect": "Reduced agricultural productivity"}}
+{"id": "row33", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Intensified hurricane activity", "effect": "Increased coastal infrastructure damage"}}
+{"id": "row34", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Melting permafrost in polar regions", "effect": "Increased methane release"}}
+{"id": "row35", "pred": {"cause": "implementation", "effect": ""}, "raw_response": "{\"cause\": \"implementation", "ground": {"cause": "Implementation of plastic bag bans", "effect": "Reduction in plastic waste"}}
+{"id": "row36", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Adoption of electric vehicles", "effect": "Reduction in urban air pollution"}}
+{"id": "row37", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Rising global average temperatures", "effect": "Increased frequency of heatwaves"}}
+{"id": "row38", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Extensive fertilizer runoff", "effect": "Increased eutrophication in aquatic ecosystems"}}
+{"id": "row39", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Enhanced public transportation infrastructure", "effect": "Reduced urban greenhouse gas emissions"}}
+{"id": "row40", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Rapid glacial retreat in mountainous regions", "effect": "Reduced freshwater availability"}}
+{"id": "row41", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Expansion of offshore wind farms", "effect": "Increased renewable energy production"}}
+{"id": "row42", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased urban heat islands due to construction", "effect": "Elevated energy consumption for cooling"}}
+{"id": "row43", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Development of large-scale solar farms", "effect": "Habitat disruption for wildlife"}}
+{"id": "row44", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Severe soil erosion due to intensive agriculture", "effect": "Reduced land productivity"}}
+{"id": "row45", "pred": {"cause": "adoption of stringent emissions regulations", "effect": ""}, "raw_response": "{\"cause\": \"adoption of stringent emissions regulations\", \"effect\": \"", "ground": {"cause": "Adoption of stringent emissions regulations", "effect": "Reduction in industrial pollution"}}
+{"id": "row46", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased desalination plant operations", "effect": "Increased brine discharge impacting marine ecosystems"}}
+{"id": "row47", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased prevalence of invasive species due to global trade", "effect": "Loss of native species"}}
+{"id": "row48", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Expansion of protected marine reserves", "effect": "Recovery of fish populations"}}
+{"id": "row49", "pred": {"cause": "implementation of urban tree planting programs", "effect": "mitigation of urban air pollution"}, "raw_response": "{\"cause\": \"implementation of urban tree planting programs\", \"effect\": \"mitigation of urban air pollution\"}", "ground": {"cause": "Implementation of urban tree planting programs", "effect": "Mitigation of urban air pollution"}}
+{"id": "row50", "pred": {"cause": "rapid melting of Antarctic", "effect": ""}, "raw_response": "{\"cause\": \"rapid melting of Antarctic", "ground": {"cause": "Rapid melting of Antarctic ice shelves", "effect": "Acceleration of global sea-level rise"}}
+{"id": "row51", "pred": {"cause": "", "effect": ""}, "raw_response": "{}", "ground": {"cause": NaN, "effect": NaN}}
+{"id": "row52", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased adoption of quantum computing algorithms", "effect": "Enhanced computational speeds for cryptographic analysis"}}
+{"id": "row53", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased use of machine learning in healthcare diagnostics", "effect": "Improved accuracy in disease detection"}}
+{"id": "row54", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Widespread adoption of IoT devices", "effect": "Increased vulnerability to cyberattacks"}}
+{"id": "row55", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Growth in remote work technology adoption", "effect": "Increased demand for cybersecurity solutions"}}
+{"id": "row56", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Development of 5G infrastructure", "effect": "Reduced latency in wireless communication"}}
+{"id": "row57", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased application of facial recognition technologies", "effect": "Heightened privacy concerns"}}
+{"id": "row58", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Implementation of edge computing", "effect": "Reduced data transmission latency"}}
+{"id": "row59", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Rise in autonomous vehicle technology adoption", "effect": "Reduction in traffic accidents"}}
+{"id": "row60", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Expanded use of augmented reality in retail", "effect": "Enhanced customer engagement"}}
+{"id": "row61", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Adoption of generative AI models", "effect": "Increased productivity in content creation"}}
+{"id": "row62", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased use of blockchain in supply chain management", "effect": "Improved tracking of goods"}}
+{"id": "row63", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Development of neuromorphic computing chips", "effect": "Increased efficiency in artificial intelligence processing"}}
+{"id": "row64", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Expansion of satellite-based internet services", "effect": "Improved connectivity in rural areas"}}
+{"id": "row65", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Widespread deployment of biometric authentication", "effect": "Increased user account security"}}
+{"id": "row66", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Enhanced predictive analytics capabilities", "effect": "Improved supply chain resilience"}}
+{"id": "row67", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Implementation of cloud-based data storage", "effect": "Increased scalability for businesses"}}
+{"id": "row68", "pred": {"cause": "Regulatory pressures on social media platforms", "effect": "calls for more transparent content moderation practices"}, "raw_response": "{\"cause\": \"Regulatory pressures on social media platforms\", \"effect\": \"calls for more transparent content moderation practices\"}", "ground": {"cause": "Increased regulatory scrutiny on social media algorithms", "effect": "Enhanced transparency in content moderation"}}
+{"id": "row69", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Adoption of software-defined networking (SDN)", "effect": "Increased flexibility in network management"}}
+{"id": "row70", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Expansion of data center infrastructure", "effect": "Increased energy consumption"}}
+{"id": "row71", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Adoption of autonomous drones for deliveries", "effect": "Reduction in human-operated vehicle use"}}
+{"id": "row72", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Increased reliance on telemedicine", "effect": "Improved access to healthcare services"}}
+{"id": "row73", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Widespread use of open-source software", "effect": "Accelerated innovation in technology communities"}}
+{"id": "row74", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Enhanced GPU computational capabilities", "effect": "Improved performance in AI training tasks"}}
+{"id": "row75", "pred": {"cause": "their adoption grows", "effect": "companies are"}, "raw_response": "{\"cause\": \"their adoption grows\", \"effect\": \"companies are", "ground": {"cause": "Increased application of digital twins in manufacturing", "effect": "Optimized operational efficiency"}}
+{"id": "row76", "pred": {"cause": "", "effect": ""}, "raw_response": "", "ground": {"cause": "Enhanced encryption standards for mobile devices", "effect": "Strengthened personal data protection"}}
