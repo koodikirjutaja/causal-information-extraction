@@ -5,8 +5,10 @@ Extract cause-effect relationships from text using multiple models:
 - OpenRouter models (Qwen3)
 - Google Gemini 2.5 Pro Preview (via Vertex AI)
 - Anthropic Claude 3.7 Sonnet
-- OpenAI models (GPT-4, GPT-3.5, GPT-4o) with Batch API support
+- OpenAI o3 with Batch API support
 - Grok models from X.AI with reasoning support
+
+python auto/run_llms.py datasets/[dataset-hard|dataset-easy]/*.csv [--model claude|deepseek|gemini|gpt4o|grok3|llama4|mistral|qwen3|all]
 """
 
 import os
@@ -61,17 +63,11 @@ ANTHROPIC_MODELS = {
 }
 
 OPENAI_MODELS = {
-    "gpt4": "gpt-4-turbo-preview",
-    "gpt35": "gpt-3.5-turbo",
-    "gpt4o": "gpt-4o"  # Latest model
+    "o3": "o3",
 }
 
 GROK_MODELS = {
     "grok3": "grok-3-latest",           # Base model
-    "grok3-beta": "grok-3-beta",        # Full knowledge model
-    "grok3-fast-beta": "grok-3-fast-beta",  # Fast model
-    "grok3-mini-beta": "grok-3-mini-beta",  # Mini model with reasoning
-    "grok3-mini-fast-beta": "grok-3-mini-fast-beta"  # Fast mini model with reasoning
 }
 
 # Create prompt using concatenation (no string formatting)
@@ -191,8 +187,7 @@ def call_openrouter_openai(context, model_key, api_key=None):
                     "content": prompt
                 }
             ],
-            temperature=0,
-            max_tokens=256
+            temperature=0
         )
         
         print("Response received.")
@@ -250,7 +245,6 @@ def call_openrouter_direct(context, model_key, api_key=None):
             }
         ],
         "temperature": 0,
-        "max_tokens": 256
     }
     
     try:
@@ -431,8 +425,7 @@ def call_openai_simple(context, model_key, api_key=None):
         # Create completion with simplified prompt structure
         response = client.chat.completions.create(
             model=model_id,
-            temperature=0,
-            max_tokens=256,
+            temperature=1,
             messages=[
                 {"role": "system", 
                  "content": "You are a causal-extraction specialist. Return ONLY a JSON object."},
@@ -822,14 +815,8 @@ MODEL_FUNCTIONS = {
     "qwen3":    lambda ctx, key: call_openrouter_openai(ctx, "qwen3", key),
     "gemini":   lambda ctx, key: call_vertex_gemini(ctx, "gemini", key),
     "claude":   lambda ctx, key: call_anthropic_claude(ctx, "claude", key),
-    "gpt4":     lambda ctx, key: call_openai_simple(ctx, "gpt4", key),
-    "gpt35":    lambda ctx, key: call_openai_simple(ctx, "gpt35", key),
-    "gpt4o":    lambda ctx, key: call_openai_simple(ctx, "gpt4o", key),
+    "o3":     lambda ctx, key: call_openai_simple(ctx, "o3", key),
     "grok3":        lambda ctx, key: call_grok(ctx, "grok3", key),
-    "grok3-beta":   lambda ctx, key: call_grok(ctx, "grok3-beta", key),
-    "grok3-fast-beta": lambda ctx, key: call_grok(ctx, "grok3-fast-beta", key),
-    "grok3-mini-beta": lambda ctx, key: call_grok(ctx, "grok3-mini-beta", key, use_reasoning=True),
-    "grok3-mini-fast-beta": lambda ctx, key: call_grok(ctx, "grok3-mini-fast-beta", key, use_reasoning=True),
 }
 
 def main():
@@ -1301,7 +1288,7 @@ def test_openai_batch():
     try:
         # Test batch processing
         print("Testing batch processing with OpenAI...")
-        batch_results = call_openai_batch_simple(contexts, "gpt4o", row_ids, api_key)
+        batch_results = call_openai_batch_simple(contexts, "o3", row_ids, api_key)
         
         print("\nBatch results:")
         for row_id, result in batch_results.items():

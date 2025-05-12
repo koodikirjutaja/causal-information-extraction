@@ -1,0 +1,469 @@
+id,cause_score,effect_score,avg_score,pred_cause,pred_effect,orig_cause,orig_effect,judge_response
+row0,1.0,1.0,1.0,central bank raises interest rates,consumer borrowing decreases,Central bank raises interest rates,Consumer borrowing decreases,"```json
+{""cause_score"": 1, ""effect_score"": 1}
+```"
+row1,1.0,1.0,1.0,introduction of algorithmic trading strategies,increased volatility in financial markets,Introduction of algorithmic trading strategies,Increased volatility in financial markets,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row2,1.0,1.0,1.0,tightening regulations on cryptocurrency exchanges,reduced market liquidity,Tightening regulations on cryptocurrency exchanges,Reduced market liquidity,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row3,1.0,1.0,1.0,increased international trade tariffs,reduction in import-dependent industries' profitability,Increased international trade tariffs,Reduction in import-dependent industries' profitability,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row4,0.0,0.0,0.0,,,Rise in ESG investing standards,Growth in sustainable investment funds,"```json
+{""cause_score"": 0, ""effect_score"": 0}
+```"
+row5,0.5,1.0,0.75,shift toward remote work,reduced corporate real estate expenditures,Implementation of remote work policies,Reduced corporate real estate expenditures,"```json
+{""cause_score"": 0.5, ""effect_score"": 1.0}
+```"
+row6,1.0,1.0,1.0,enhanced data privacy legislation emerged,increase in compliance costs for businesses,Enhanced data privacy legislation,Increased compliance costs for businesses,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row7,1.0,1.0,1.0,adoption of central bank digital currencies (CBDCs),decline in cash usage,Adoption of central bank digital currencies (CBDCs),Decline in traditional cash usage,"```json
+{
+  ""cause_score"": 1.0,
+  ""effect_score"": 1.0
+}
+```"
+row8,1.0,1.0,1.0,escalation of geopolitical tensions,increased prices of commodities such as oil,Escalation of geopolitical tensions,Increased prices of commodities such as oil,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row9,1.0,1.0,1.0,rising inflation rates,decreased consumer purchasing power,Rising inflation rates,Decrease in consumer purchasing power,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row10,1.0,1.0,1.0,growing focus on financial knowledge,increased household savings rates,Expansion of financial literacy education,Increased household savings rates,"```json
+{
+  ""cause_score"": 1.0,
+  ""effect_score"": 1.0
+}
+```"
+row11,1.0,1.0,1.0,rise of fintech lending platforms,improved access to credit for small businesses,Growth of fintech lending platforms,Improved access to credit for small businesses,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row12,1.0,1.0,1.0,sudden bankruptcy of major banks,investor confidence appeared to decline,Sudden bankruptcy of major banks,Decline in investor confidence,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row13,0.0,0.0,0.0,,,Increased automation in financial auditing,Reduction in accounting errors,"```json
+{""cause_score"": 0.0, ""effect_score"": 0.0}
+```"
+row14,1.0,1.0,1.0,reduction in government subsidies for renewable energy,decreased private investment in solar power projects,Reduction in government subsidies for renewable energy,Decreased private investment in solar power projects,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row15,0.5,0.5,0.5,ongoing rise in remote banking services,marked decline in physical bank branches,Surge in remote banking services,Decline in physical bank branch numbers,"```json
+{
+  ""cause_score"": 0.5,
+  ""effect_score"": 0.5
+}
+```"
+row16,1.0,1.0,1.0,implementation of carbon taxes,increased operational costs for heavy industries,Implementation of carbon taxes,Increased operational costs for heavy industries,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row17,1.0,1.0,1.0,shift toward AI-driven credit scoring,increased accuracy in loan approvals,Adoption of AI-driven credit scoring,Increased accuracy in loan approvals,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row18,1.0,1.0,1.0,supply chain disruptions due to pandemics,inflationary pressures on consumer goods,Supply chain disruptions due to pandemics,Inflationary pressures on consumer goods,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row19,0.0,0.5,0.25,improved transparency in transactions,key feature of blockchain,Expanded use of blockchain in supply chain finance,Improved transparency in transactions,"```json
+{
+  ""cause_score"": 0.0,
+  ""effect_score"": 0.5
+}
+```"
+row20,1.0,1.0,1.0,rise in housing market speculation,increased risk of property price bubbles,Rise in housing market speculation,Increased risk of property price bubbles,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row21,0.0,0.0,0.0,slowed economic growth,reduction of foreign direct investment,Reduction of foreign direct investment due to economic sanctions,Slowed economic growth,"```json
+{""cause_score"": 0, ""effect_score"": 0}
+```"
+row22,0.0,0.0,0.0,,,Increased corporate mergers and acquisitions,Reduction in market competition,"```json
+{""cause_score"": 0.0, ""effect_score"": 0.0}
+```"
+row23,0.5,0.5,0.5,strengthened regulations,increased administrative overhead,Strengthened anti-money laundering policies,Increased administrative overhead for banks,"```json
+{""cause_score"": 0.5, ""effect_score"": 0.5}
+```"
+row24,1.0,1.0,1.0,shift toward digital payment systems,physical currency circulation declined,Shift towards digital payment systems,Reduced circulation of physical currency,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row25,1.0,1.0,1.0,,,,,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row26,1.0,1.0,1.0,increased frequency of forest fires,reduction in biodiversity,Increased frequency of forest fires,Reduction in biodiversity,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row27,0.5,1.0,0.75,rapid expansion of urban areas,loss of wetlands,Expansion of urban areas,Loss of wetlands,"Okay, let's break down the evaluation for the cause and effect separately.
+
+**Ground Truth Pair:**
+Cause: Expansion of urban areas
+Effect: Loss of wetlands
+
+**Predicted Pair:**
+Cause: rapid expansion of urban areas
+Effect: loss of wetlands
+
+**Scoring Rule:**
+1.0 – Exact match or semantically identical meaning
+0.5 – Partial match (core concept is similar but missing important details)
+0.0 – No match or incorrect
+
+**Evaluating the Cause:**
+Ground Truth Cause (GTC): ""Expansion of urban areas""
+Predicted Cause (PC): ""rapid expansion of urban areas""
+
+1.  **Exact Match?** No. The PC includes the word ""rapid,"" which is not in the GTC.
+2.  **Semantically Identical Meaning?**
+    ""Semantically identical"" means they convey the same meaning.
+    ""Expansion of urban areas"" refers to the general process of urban areas growing.
+    ""Rapid expansion of urban areas"" refers to the same process occurring at a high speed.
+    A slow or moderate expansion would fit the GTC but not the PC. Therefore, they are not semantically identical. The PC is more specific than the GTC.
+    So, the score is not 1.0 based on this criterion.
+
+3.  **No Match or Incorrect?** No. The core concept ""expansion of urban areas"" is clearly present and correct in the PC. So, the score is not 0.0.
+
+4.  **Partial Match?** Since it's not 1.0 and not 0.0, it should be 0.5 if it fits the description.
+    The description for 0.5 is ""Partial match (core concept is similar but missing important details)"".
+    *   ""Partial match"": Yes, it's not a full match but not a no match.
+    *   ""core concept is similar"": Yes, the core concept ""expansion of urban areas"" is present in both and is central to both phrases.
+    *   ""but missing important details"": This part of the description is where it gets slightly tricky. The PC (""rapid expansion of urban areas"") is *not missing* details from the GTC (""Expansion of urban areas""). In fact, the PC *adds* a detail (""rapid""). The GTC is more general than the PC.
+        However, ""Partial match"" is the main category, and ""core concept is similar"" is met. The phrase ""missing important details"" might be an *example* of what constitutes a partial match, rather than an exhaustive condition. If the match is not perfect (1.0) but the core concept is correct and similar, it falls into 0.5. The deviation here is the addition of specificity (""rapid"").
+
+Given the discrete scoring options (0, 0.5, 1.0), and ruling out 1.0 (not semantically identical) and 0.0 (clearly a match of the core concept), 0.5 is the most appropriate score for the cause. The prediction correctly identified the core cause but added a qualifier.
+
+**Cause Score: 0.5**
+
+**Evaluating the Effect:**
+Ground Truth Effect (GTE): ""Loss of wetlands""
+Predicted Effect (PE): ""loss of wetlands""
+
+1.  **Exact Match?** Yes. ""Loss of wetlands"" and ""loss of wetlands"" are identical strings (ignoring potential case sensitivity, but here even the case matches if we consider ""Loss"" vs ""loss"" as a minor casing difference often ignored, or if the comparison is case-insensitive. The problem doesn't specify case sensitivity, but typical evaluations treat minor case differences as matches if the wording is identical. Here, the provided predicted effect ""loss of wetlands"" is lowercase and matches the typical representation of the ground truth if we ignore initial capitalization for GT). Let's assume standard string comparison where ""Loss"" vs ""loss"" is a minor difference typically allowed for ""exact match"" or at least ""semantically identical"". More precisely, if we treat ""Loss"" and ""loss"" as the same word, it's an exact match.
+
+    If we are extremely strict about capitalization, ""Loss"" is not ""loss"". However, ""semantically identical meaning"" would still apply. ""Loss of wetlands"" and ""loss of wetlands"" have an identical semantic meaning.
+
+    Given ""loss of wetlands"" in the predicted pair is all lowercase, it's an exact match to ""Loss of wetlands"" if we normalize case, or it's semantically identical. The rules provide ""Exact match or semantically identical meaning"" for 1.0. This condition is clearly met.
+
+**Effect Score: 1.0**
+
+Final JSON structure:
+{""cause_score"": 0.5, ""effect_score"": 1.0}
+
+```json
+{
+  ""cause_score"": 0.5,
+  ""effect_score"": 1.0
+}
+```"
+row28,1.0,1.0,1.0,rapid ocean acidification,decreased coral reef resilience,Rapid ocean acidification,Decreased coral reef resilience,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row29,1.0,1.0,1.0,adoption of regenerative agriculture practices,increased soil carbon sequestration,Adoption of regenerative agriculture practices,Increased soil carbon sequestration,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row30,1.0,1.0,1.0,extensive deforestation in tropical regions,reduction in regional rainfall,Extensive deforestation in tropical regions,Reduction in regional rainfall,"```json
+{""cause_score"": 1, ""effect_score"": 1}
+```"
+row31,1.0,1.0,1.0,increased microplastic pollution,decline in marine life populations,Increased microplastic pollution,Decline in marine life populations,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row32,1.0,1.0,1.0,widespread drought conditions,reduced agricultural productivity,Widespread drought conditions,Reduced agricultural productivity,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row33,1.0,1.0,1.0,intensified hurricane activity,increased coastal infrastructure damage,Intensified hurricane activity,Increased coastal infrastructure damage,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row34,1.0,1.0,1.0,melting permafrost in polar regions,increased methane release,Melting permafrost in polar regions,Increased methane release,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row35,1.0,0.5,0.75,implementation of plastic bag bans,reduction in plastic waste in areas,Implementation of plastic bag bans,Reduction in plastic waste,"```json
+{""cause_score"": 1, ""effect_score"": 0.5}
+```"
+row36,0.5,0.5,0.5,large-scale adoption of electric vehicles,reduction in urban air pollution on transit corridors,Adoption of electric vehicles,Reduction in urban air pollution,"```json
+{
+  ""cause_score"": 0.5,
+  ""effect_score"": 0.5
+}
+```"
+row37,1.0,1.0,1.0,rising global average temperatures,increased frequency of heatwaves,Rising global average temperatures,Increased frequency of heatwaves,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row38,1.0,1.0,1.0,extensive fertilizer runoff,increased eutrophication in aquatic ecosystems,Extensive fertilizer runoff,Increased eutrophication in aquatic ecosystems,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row39,1.0,1.0,1.0,enhanced public transportation infrastructure,reduced urban greenhouse gas emissions,Enhanced public transportation infrastructure,Reduced urban greenhouse gas emissions,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row40,1.0,1.0,1.0,rapid glacial retreat in mountainous regions,reduced freshwater availability,Rapid glacial retreat in mountainous regions,Reduced freshwater availability,"```json
+{""cause_score"": 1, ""effect_score"": 1}
+```"
+row41,1.0,1.0,1.0,expansion of offshore wind farms reached commissioning milestones,increased renewable energy production,Expansion of offshore wind farms,Increased renewable energy production,"```json
+{
+  ""cause_score"": 1.0,
+  ""effect_score"": 1.0
+}
+```"
+row42,1.0,1.0,1.0,increased urban heat islands due to construction,elevated energy consumption for cooling across neighborhoods,Increased urban heat islands due to construction,Elevated energy consumption for cooling,"```json
+{
+  ""cause_score"": 1.0,
+  ""effect_score"": 1.0
+}
+```"
+row43,0.0,0.0,0.0,habitat disruption for wildlife,ecological assessments cited concerns in tracts earmarked for development of large-scale solar farms,Development of large-scale solar farms,Habitat disruption for wildlife,"```json
+{
+  ""cause_score"": 0.0,
+  ""effect_score"": 0.0
+}
+```"
+row44,1.0,1.0,1.0,severe soil erosion due to intensive agriculture,reduced land productivity,Severe soil erosion due to intensive agriculture,Reduced land productivity,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row45,1.0,1.0,1.0,adoption of stringent emissions regulations,reduction in industrial pollution,Adoption of stringent emissions regulations,Reduction in industrial pollution,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row46,0.0,0.5,0.25,increased brine discharge from desalination plant operations,impact on marine ecosystems,Increased desalination plant operations,Increased brine discharge impacting marine ecosystems,"```json
+{""cause_score"": 0, ""effect_score"": 0.5}
+```"
+row47,1.0,1.0,1.0,increased prevalence of invasive species due to global trade,loss of native species in habitats,Increased prevalence of invasive species due to global trade,Loss of native species,"```json
+{
+  ""cause_score"": 1.0,
+  ""effect_score"": 1.0
+}
+```"
+row48,1.0,1.0,1.0,expansion of protected marine reserves,recovery of fish populations,Expansion of protected marine reserves,Recovery of fish populations,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row49,1.0,1.0,1.0,implementation of urban tree planting programs,mitigation of urban air pollution along streets,Implementation of urban tree planting programs,Mitigation of urban air pollution,"```json
+{
+  ""cause_score"": 1,
+  ""effect_score"": 1
+}
+```"
+row50,1.0,1.0,1.0,rapid melting of Antarctic ice shelves,acceleration of global sea-level rise,Rapid melting of Antarctic ice shelves,Acceleration of global sea-level rise,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row51,1.0,1.0,1.0,,,,,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row52,0.0,0.0,0.0,integration of quantum techniques into practical systems remains challenging,cryptographic analysis faces difficulties in benefiting from quantum computing,Increased adoption of quantum computing algorithms,Enhanced computational speeds for cryptographic analysis,"```json
+{""cause_score"": 0.0, ""effect_score"": 0.0}
+```"
+row53,0.5,1.0,0.75,the rise of machine learning models,healthcare diagnostics are benefiting from increased accuracy in disease detection,Increased use of machine learning in healthcare diagnostics,Improved accuracy in disease detection,"```json
+{""cause_score"": 0.5, ""effect_score"": 1.0}
+```"
+row54,1.0,1.0,1.0,more devices are interconnected,risk of vulnerabilities in security frameworks continues to be a significant concern,Widespread adoption of IoT devices,Increased vulnerability to cyberattacks,"```json
+{
+  ""cause_score"": 1.0,
+  ""effect_score"": 1.0
+}
+```"
+row55,0.5,0.0,0.25,The shift towards remote work,A surge in the use of various collaboration technologies,Growth in remote work technology adoption,Increased demand for cybersecurity solutions,"```json
+{""cause_score"": 0.5, ""effect_score"": 0.0}
+```"
+row56,0.5,0.5,0.5,5G infrastructure promises faster wireless speeds and more reliable connections,impact on industries that require minimal communication delays is becoming increasingly evident,Development of 5G infrastructure,Reduced latency in wireless communication,"```json
+{
+  ""cause_score"": 0.5,
+  ""effect_score"": 0.5
+}
+```"
+row57,1.0,1.0,1.0,broader application of facial recognition technology in sectors like security and retail,escalating privacy concerns,Increased application of facial recognition technologies,Heightened privacy concerns,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row58,1.0,0.5,0.75,processing information closer to the source,reduce latency,Implementation of edge computing,Reduced data transmission latency,"```json
+{
+  ""cause_score"": 1.0,
+  ""effect_score"": 0.5
+}
+```"
+row59,0.5,0.5,0.5,Autonomous vehicle technology reducing human error in driving,Potentially lowering traffic accidents,Rise in autonomous vehicle technology adoption,Reduction in traffic accidents,"Okay, let's break this down for both cause and effect.
+
+**Cause Evaluation:**
+*   **Ground Truth Cause:** Rise in autonomous vehicle technology adoption
+*   **Predicted Cause:** Autonomous vehicle technology reducing human error in driving
+
+1.  **Core Concept Comparison:**
+    *   Both causes relate to ""autonomous vehicle technology."" This is a shared core element.
+2.  **Semantic Differences:**
+    *   The ground truth focuses on the *adoption* or *increased prevalence* of the technology. This is about the scale and spread of AVs.
+    *   The predicted cause focuses on a *mechanism* or *characteristic* of the technology – its ability to reduce human error. This is about *how* AVs function or what makes them effective.
+    *   ""Rise in adoption"" is an event or a trend. ""Reducing human error"" is an attribute or a process. These are related but distinct concepts. The predicted cause is more of an explanation for *why* the adoption of AVs might lead to the effect, rather than being the adoption itself.
+3.  **Scoring:**
+    *   It's not an exact match (1.0) because the specific focus is different (adoption vs. error reduction mechanism).
+    *   It's not a no match (0.0) because both clearly refer to autonomous vehicle technology as the causal agent.
+    *   It fits ""Partial match (core concept is similar but missing important details)"" (0.5). The core concept of AV technology is there, but the ground truth's emphasis on ""rise in adoption"" (the increasing usage) is different from the predicted cause's emphasis on ""reducing human error"" (a functional aspect).
+
+**Cause Score: 0.5**
+
+**Effect Evaluation:**
+*   **Ground Truth Effect:** Reduction in traffic accidents
+*   **Predicted Effect:** Potentially lowering traffic accidents
+
+1.  **Core Concept Comparison:**
+    *   Both effects describe a decrease in traffic accidents. ""Reduction"" and ""lowering"" are synonymous in this context.
+2.  **Semantic Differences:**
+    *   The key difference is the word ""potentially"" in the predicted effect.
+    *   ""Reduction in traffic accidents"" implies a more direct or certain outcome.
+    *   ""Potentially lowering traffic accidents"" introduces a degree of uncertainty or possibility; it suggests the outcome might happen.
+3.  **Scoring:**
+    *   It's not an exact match (1.0) due to the presence of ""potentially,"" which alters the certainty of the statement.
+    *   ""Semantically identical meaning"" (for 1.0): A statement of fact or strong likelihood (""Reduction"") is not semantically identical to a statement of possibility (""Potentially lowering""). The modality changes the meaning.
+    *   It's not a no match (0.0) because the core outcome (fewer traffic accidents) is the same.
+    *   It fits ""Partial match (core concept is similar but missing important details)"" (0.5). The core concept (decrease in accidents) is similar, but the predicted effect has a different level of certainty, which can be considered a significant semantic nuance. The ""potentiality"" is a detail that differentiates it from a more straightforward assertion of reduction.
+
+**Effect Score: 0.5**
+
+```json
+{""cause_score"": 0.5, ""effect_score"": 0.5}
+```"
+row60,1.0,0.5,0.75,AR becomes more integrated into customer interactions,potential to drive deeper engagement,Expanded use of augmented reality in retail,Enhanced customer engagement,"```json
+{
+  ""cause_score"": 1.0,
+  ""effect_score"": 0.5
+}
+```"
+row61,1.0,1.0,1.0,Generative AI tools are gaining ground in content creation,enabling faster production of diverse types of media,Adoption of generative AI models,Increased productivity in content creation,"```json
+{
+  ""cause_score"": 1.0,
+  ""effect_score"": 1.0
+}
+```"
+row62,0.5,1.0,0.75,Blockchain technology is being increasingly applied to enhance transparency in supply chains,allowing for better tracking of goods,Increased use of blockchain in supply chain management,Improved tracking of goods,"```json
+{
+  ""cause_score"": 0.5,
+  ""effect_score"": 1.0
+}
+```"
+row63,0.0,0.0,0.0,,,Development of neuromorphic computing chips,Increased efficiency in artificial intelligence processing,"```json
+{""cause_score"": 0.0, ""effect_score"": 0.0}
+```"
+row64,0.0,0.0,0.0,logistical and cost challenges,hamper widespread adoption of satellite-based internet services,Expansion of satellite-based internet services,Improved connectivity in rural areas,"```json
+{""cause_score"": 0.0, ""effect_score"": 0.0}
+```"
+row65,1.0,0.0,0.5,implementation of biometric authentication systems across various sectors,concerns about data privacy and long-term implications of biometric data usage,Widespread deployment of biometric authentication,Increased user account security,"```json
+{""cause_score"": 1.0, ""effect_score"": 0.0}
+```"
+row66,1.0,1.0,1.0,advancement of predictive analytics tools,businesses are better equipped to anticipate market shifts and disruptions in the supply chain,Enhanced predictive analytics capabilities,Improved supply chain resilience,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row67,1.0,0.0,0.5,widespread adoption of cloud storage solutions,"organizations are confronted with questions about security, data management, and long-term sustainability",Implementation of cloud-based data storage,Increased scalability for businesses,"```json
+{""cause_score"": 1.0, ""effect_score"": 0.0}
+```"
+row68,1.0,0.5,0.75,Regulatory pressures on social media platforms,calls for more transparent content moderation practices,Increased regulatory scrutiny on social media algorithms,Enhanced transparency in content moderation,"```json
+{
+  ""cause_score"": 1.0,
+  ""effect_score"": 0.5
+}
+```"
+row69,0.0,0.0,0.0,,,Adoption of software-defined networking (SDN),Increased flexibility in network management,"```json
+{""cause_score"": 0.0, ""effect_score"": 0.0}
+```"
+row70,0.0,1.0,0.5,demand for cloud services and digital infrastructure grows,energy consumption of data centers increases,Expansion of data center infrastructure,Increased energy consumption,"Okay, let's break this down based on the scoring rules.
+
+**Ground Truth Pair:**
+*   Cause: Expansion of data center infrastructure
+*   Effect: Increased energy consumption
+
+**Predicted Pair:**
+*   Cause: demand for cloud services and digital infrastructure grows
+*   Effect: energy consumption of data centers increases
+
+**Evaluating the Cause:**
+*   **Ground Truth Cause (GTC):** ""Expansion of data center infrastructure""
+    *   This describes a physical process: the act of data center infrastructure getting larger or more extensive.
+*   **Predicted Cause (PC):** ""demand for cloud services and digital infrastructure grows""
+    *   This describes a trend in market/user needs: an increase in the requirement for services that rely on digital infrastructure.
+
+1.  **Exact match or semantically identical meaning (1.0)?**
+    *   No. ""Expansion of infrastructure"" is a physical change, while ""demand grows"" is a market trend. They are distinct concepts, though causally related (demand growth often leads to infrastructure expansion).
+
+2.  **Partial match (core concept is similar but missing important details) (0.5)?**
+    *   Is the core concept similar? Both relate to the growth and scaling within the digital/data ecosystem.
+    *   Is one statement a version of the other but ""missing important details""?
+        *   ""Demand growth"" is not ""infrastructure expansion with missing details.""
+        *   ""Infrastructure expansion"" is not ""demand growth with missing details.""
+    *   They are different concepts. The predicted cause is a *driver* or *reason* for the ground truth cause, not a less detailed description of the ground truth cause itself. For example, if GTC was ""Rapid and large-scale expansion of data center infrastructure globally"" and PC was ""Expansion of data center infrastructure"", that would be a 0.5 as PC has the same core concept but misses details (rapid, large-scale, globally). This is not the case here.
+
+3.  **No match or incorrect (0.0)?**
+    *   Given that they are distinct concepts rather than one being a less detailed version of the other, and they are not semantically identical, this seems to be the most appropriate score under a strict interpretation of the ""missing important details"" clause for 0.5. While highly related in a causal chain, the statements themselves describe different things.
+
+    *Final decision for cause: 0.0*
+
+**Evaluating the Effect:**
+*   **Ground Truth Effect (GTE):** ""Increased energy consumption""
+*   **Predicted Effect (PE):** ""energy consumption of data centers increases""
+
+1.  **Exact match or semantically identical meaning (1.0)?**
+    *   ""Increased energy consumption"" and ""energy consumption ... increases"" are semantically equivalent regarding the core idea of energy use rising.
+    *   The GTE is general. The PE specifies ""of data centers"".
+    *   Considering the context provided by the GTC (""Expansion of data center infrastructure""), the ""Increased energy consumption"" in the GTE implicitly refers to the energy consumption *of that expanding data center infrastructure*.
+    *   Therefore, PE (""energy consumption of data centers increases"") is semantically identical to the contextually implied meaning of GTE (""Increased energy consumption [by data centers]""). The addition of ""of data centers"" makes it explicit and aligns perfectly with the implied context.
+
+    *Final decision for effect: 1.0*
+
+**JSON Output:**
+```json
+{""cause_score"": 0.0, ""effect_score"": 1.0}
+```"
+row71,1.0,1.0,1.0,rise of autonomous delivery drones,reduce reliance on human-operated vehicles,Adoption of autonomous drones for deliveries,Reduction in human-operated vehicle use,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row72,0.5,1.0,0.75,Telemedicine offers new ways to provide healthcare services,Increased accessibility to healthcare for remote and underserved populations,Increased reliance on telemedicine,Improved access to healthcare services,"```json
+{""cause_score"": 0.5, ""effect_score"": 1.0}
+```"
+row73,1.0,1.0,1.0,growth of open-source software,driving innovation by allowing collaborative development across various tech communities,Widespread use of open-source software,Accelerated innovation in technology communities,"```json
+{""cause_score"": 1.0, ""effect_score"": 1.0}
+```"
+row74,0.5,1.0,0.75,Graphics processing units (GPUs) have become integral to artificial intelligence training,enabling more efficient computation,Enhanced GPU computational capabilities,Improved performance in AI training tasks,"```json
+{
+  ""cause_score"": 0.5,
+  ""effect_score"": 1.0
+}
+```"
+row75,1.0,0.5,0.75,adoption of digital twins in manufacturing,potential for increased efficiency,Increased application of digital twins in manufacturing,Optimized operational efficiency,"```json
+{""cause_score"": 1.0, ""effect_score"": 0.5}
+```"
+row76,0.0,0.0,0.0,data security becomes a higher priority,mobile devices are adopting stronger encryption methods,Enhanced encryption standards for mobile devices,Strengthened personal data protection,"Let's break down the comparison for each part:
+
+**Cause:**
+Ground Truth Cause (GTC): ""Enhanced encryption standards for mobile devices""
+Predicted Cause (PC): ""data security becomes a higher priority""
+
+1.  **Semantic Meaning:**
+    *   GTC refers to a specific technical development or set of rules (""encryption standards"") that have been improved (""enhanced"") for a particular platform (""mobile devices"").
+    *   PC refers to a general shift in importance or focus (""becomes a higher priority"") regarding a broader concept (""data security"").
+
+2.  **Relationship:** ""Data security becoming a higher priority"" (PC) could be a *reason* or a *driving force* that leads to the development and implementation of ""enhanced encryption standards for mobile devices"" (GTC). They are not describing the same event or concept. PC is a precursor to GTC.
+
+3.  **Core Concepts:**
+    *   GTC's core is about improved technical specifications for security.
+    *   PC's core is about the increased importance of security in general.
+    While ""data security"" and ""encryption"" are related (encryption is a tool for data security), the statements describe different things: PC describes a change in attitude/policy, while GTC describes a change in a technical artifact/rule. The ""standards"" aspect of GTC is key and is absent in PC. The ""priority"" aspect of PC is key and absent in GTC.
+
+4.  **Score:** They are not semantically identical (1.0). They are not even a partial match where the core concept is similar with missing details (0.5). The core concepts themselves are different (a standard vs. a priority). Therefore, the score is 0.0.
+
+**Effect:**
+Ground Truth Effect (GTE): ""Strengthened personal data protection""
+Predicted Effect (PE): ""mobile devices are adopting stronger encryption methods""
+
+1.  **Semantic Meaning:**
+    *   GTE describes an outcome: personal data is better protected.
+    *   PE describes an action or a process: mobile devices are implementing or using more robust encryption.
+
+2.  **Relationship:** ""Mobile devices adopting stronger encryption methods"" (PE) is a *means* by which ""strengthened personal data protection"" (GTE) is achieved. PE is a cause of GTE. They are not the same concept.
+
+3.  **Core Concepts:**
+    *   GTE's core is about the *result* of improved security – better protection for data.
+    *   PE's core is about the *implementation* of a security measure.
+    Interestingly, PE (""mobile devices are adopting stronger encryption methods"") is semantically very similar to the Ground Truth *Cause* (""Enhanced encryption standards for mobile devices""). If encryption standards are enhanced, it is likely that devices will adopt these stronger methods.
+
+4.  **Score:** PE and GTE are not semantically identical (1.0). The core concept of PE (adoption of methods) is different from the core concept of GTE (state of protection). PE describes an action, while GTE describes an outcome of such actions. Therefore, the score is 0.0.
+
+To summarize the relationship between the pairs:
+Predicted Cause (`data security becomes a higher priority`) -> Ground Truth Cause (`Enhanced encryption standards for mobile devices`) -> Predicted Effect (`mobile devices are adopting stronger encryption methods`) -> Ground Truth Effect (`Strengthened personal data protection`).
+
+The predicted cause precedes the ground truth cause. The predicted effect is an intermediate step between the ground truth cause and the ground truth effect (and is very similar to the ground truth cause). Neither the predicted cause matches the ground truth cause, nor the predicted effect matches the ground truth effect.
+
+```json
+{
+  ""cause_score"": 0.0,
+  ""effect_score"": 0.0
+}
+```"

@@ -1,0 +1,716 @@
+id,cause_score,effect_score,avg_score,pred_cause,pred_effect,orig_cause,orig_effect,judge_response
+row0,1.0,1.0,1.0,central bank raises interest rates,consumer borrowing decreases,Central bank raises interest rates,Consumer borrowing decreases,"{""cause_score"": 1, ""effect_score"": 1}"
+row1,1.0,1.0,1.0,the introduction of algorithmic trading strategies,increased volatility in financial markets,Introduction of algorithmic trading strategies,Increased volatility in financial markets,"{""cause_score"": 1, ""effect_score"": 1}"
+row2,1.0,1.0,1.0,tightening regulations on cryptocurrency exchanges,reduced market liquidity,Tightening regulations on cryptocurrency exchanges,Reduced market liquidity,"{""cause_score"": 1, ""effect_score"": 1}"
+row3,0.0,0.0,0.0,increased international trade tariffs and the broader economic environment,reduction in import-dependent industries' profitability,Increased international trade tariffs,Reduction in import-dependent industries' profitability,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect components separately.
+
+1. **Cause Component Analysis**:
+   - **Ground Truth Cause**: ""Increased international trade tariffs""
+   - **Predicted Cause**: ""increased international trade tariffs and the broader economic environment""
+   
+   The predicted cause includes the exact phrase ""increased international trade tariffs"" found in the ground truth cause, which is a key element. However, it also adds ""and the broader economic environment,"" which introduces additional information not present in the ground truth cause. The core concept of ""increased international trade tariffs"" is maintained, but the addition of ""the broader economic environment"" slightly alters the focus by broadening the cause beyond just tariffs.
+
+2. **Effect Component Analysis**:
+   - **Ground Truth Effect**: ""Reduction in import-dependent industries' profitability""
+   - **Predicted Effect**: ""reduction in import-dependent industries' profitability""
+   
+   The predicted effect is identical to the ground truth effect, both in terms of wording and meaning. This indicates a perfect match.
+
+Given the analysis:
+
+- For the **cause**, the core concept is similar, but the predicted cause includes additional information (""the broader economic environment"") not in the ground truth. Thus, it's not"
+row4,0.0,0.0,0.0,the rise in ESG investing standards caught attention,Numerous alternative explanations were proposed,Rise in ESG investing standards,Growth in sustainable investment funds,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - **Ground Truth Cause**: ""Rise in ESG investing standards""
+   - **Predicted Cause**: ""the rise in ESG investing standards caught attention""
+   
+   The predicted cause includes the core concept of the ground truth cause (""rise in ESG investing standards"") but adds an additional detail (""caught attention""). The core concept is still present, but the addition changes the nuance of what is being caused. However, the fundamental cause (""rise in ESG investing standards"") is still identifiable. Thus, it's a partial match because it retains the core concept but adds a condition (""caught attention"") not present in the ground truth.
+
+2. **Effect Analysis**:
+   - **Ground Truth Effect**: ""Growth in sustainable investment funds""
+   - **Predicted Effect**: ""Numerous alternative explanations were proposed""
+   
+   The predicted effect is quite different from the ground truth effect. The ground truth effect is about a specific outcome (""Growth in sustainable investment funds""), whereas the predicted effect is about a reaction or response (""Numerous alternative explanations were proposed"") that doesn't directly relate to the growth or outcome expected in the ground truth. Thus, it is not a"
+row5,0.0,0.0,0.0,remote work policies were widely adopted,reduced corporate real estate expenditures occurred,Implementation of remote work policies,Reduced corporate real estate expenditures,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Implementation of remote work policies""
+   - Predicted Cause: ""remote work policies were widely adopted""
+
+The ground truth cause mentions the ""implementation"" of remote work policies, which implies putting these policies into effect. The predicted cause states that ""remote work policies were widely adopted,"" which conveys a similar idea - that these policies were not just implemented but also accepted or used on a large scale. Although the wording is slightly different, both causes convey the idea of remote work policies being put into practice. The core concept is similar, and the difference is more about the nuance of the implementation versus adoption. Thus, the predicted cause can be considered to have a similar meaning to the ground truth cause.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Reduced corporate real estate expenditures""
+   - Predicted Effect: ""reduced corporate real estate expenditures occurred""
+
+The ground truth effect is about the reduction in corporate real estate expenditures. The predicted effect states that ""reduced corporate real estate expenditures occurred,"" which is semantically identical to the ground truth effect. Both indicate a decrease or reduction in corporate real estate expenditures."
+row6,0.0,0.0,0.0,changes in data privacy laws,enhanced data privacy legislation emerged,Enhanced data privacy legislation,Increased compliance costs for businesses,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Enhanced data privacy legislation""
+   - Predicted Cause: ""changes in data privacy laws""
+
+   Both phrases relate to alterations or updates in the legal framework governing data privacy. ""Enhanced data privacy legislation"" implies a strengthening or improvement of laws related to data privacy, while ""changes in data privacy laws"" is more general, encompassing any kind of alteration (not limited to enhancements). Despite the difference in specificity and the direction of change, they share the core concept of data privacy laws being modified. Thus, they can be considered to have a similar core concept, but the predicted cause lacks the specificity of the ground truth cause regarding the direction of the change (i.e., ""enhanced""). Therefore, the cause can be scored as 0.5 because it's a partial match.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased compliance costs for businesses""
+   - Predicted Effect: ""enhanced data privacy legislation emerged""
+
+   The ground truth effect discusses the consequence of the cause on businesses, specifically an increase in compliance costs. The predicted effect, however, refers back to the cause (""enh"
+row7,0.0,0.0,0.0,adoption of central bank digital currencies (CBDCs),"cash usage, which notably declined during the same period",Adoption of central bank digital currencies (CBDCs),Decline in traditional cash usage,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+1. **Cause Component**:
+   - Ground Truth Cause: Adoption of central bank digital currencies (CBDCs)
+   - Predicted Cause: adoption of central bank digital currencies (CBDCs)
+   
+   The predicted cause is identical to the ground truth cause. Both refer to the adoption of CBDCs as the cause. Therefore, the cause_score should be 1.0 as it is an exact match.
+
+2. **Effect Component**:
+   - Ground Truth Effect: Decline in traditional cash usage
+   - Predicted Effect: cash usage, which notably declined during the same period
+   
+   The predicted effect mentions ""cash usage"" declining, which is semantically similar to a ""decline in traditional cash usage."" The core concept of cash usage declining is captured in both the ground truth and the predicted effect. Although the predicted effect adds ""during the same period,"" which might imply a temporal relationship or coincidence rather than a direct causal effect, the essential meaning of cash usage declining is preserved. Therefore, the effect_score should be considered 1.0 because the core concept is maintained, and the additional phrase, while adding some nuance, does not alter the"
+row8,1.0,1.0,1.0,escalation of geopolitical tensions,Increased prices of commodities such as oil,Escalation of geopolitical tensions,Increased prices of commodities such as oil,"{""cause_score"": 1, ""effect_score"": 1}"
+row9,1.0,1.0,1.0,rising inflation rates,decreased consumer purchasing power,Rising inflation rates,Decrease in consumer purchasing power,"{""cause_score"": 1, ""effect_score"": 1}"
+row10,0.0,0.0,0.0,The growing focus on financial knowledge,coincided with increased household savings rates,Expansion of financial literacy education,Increased household savings rates,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect components separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Expansion of financial literacy education""
+   - Predicted Cause: ""The growing focus on financial knowledge""
+
+Both causes relate to the idea of increasing or enhancing financial understanding or education among individuals. ""Financial literacy education"" and ""financial knowledge"" are closely related concepts, as financial literacy is essentially about having knowledge regarding financial matters. The terms ""expansion"" and ""growing focus"" both indicate an increase or heightened emphasis on the subject. Therefore, while not identical, they convey a very similar idea. The core concept is similar, and the difference is not significant enough to be considered a partial match; it's more aligned with being semantically identical in the context of cause.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased household savings rates""
+   - Predicted Effect: ""coincided with increased household savings rates""
+
+The predicted effect and the ground truth effect both mention ""increased household savings rates."" The phrase ""coincided with"" in the predicted effect suggests a temporal relationship or correlation rather than directly stating causation. However, the core effect (""increased household savings rates"") is"
+row11,0.0,0.0,0.0,fintech grew,improved access to credit for small businesses was observed,Growth of fintech lending platforms,Improved access to credit for small businesses,"To evaluate the predicted cause-effect pair against the ground truth pair, we need to assess both the cause and effect components separately for their similarity in meaning.
+
+1. **Cause Component**:
+   - Ground Truth: ""Growth of fintech lending platforms""
+   - Predicted: ""fintech grew""
+
+The ground truth cause mentions the ""growth of fintech lending platforms,"" which implies an expansion or increase in fintech, specifically in the context of lending platforms. The predicted cause, ""fintech grew,"" captures the essence of growth or expansion in fintech but lacks the specificity of ""lending platforms."" Despite this, the core concept of ""growth"" or ""expansion"" in ""fintech"" is present in both. Thus, while not exact, there's a significant similarity.
+
+2. **Effect Component**:
+   - Ground Truth: ""Improved access to credit for small businesses""
+   - Predicted: ""improved access to credit for small businesses was observed""
+
+The predicted effect is essentially the same as the ground truth effect, with the addition of ""was observed."" The core statement, ""improved access to credit for small businesses,"" is identical in meaning. The phrase ""was observed"" indicates a passive voice construction and does not alter the core effect; it merely suggests that the effect was noted or observed."
+row12,0.0,0.0,0.0,the sudden bankruptcy of major banks,investor confidence appeared to decline,Sudden bankruptcy of major banks,Decline in investor confidence,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect components separately.
+
+1. **Cause Comparison**:
+   - Ground Truth Cause: ""Sudden bankruptcy of major banks""
+   - Predicted Cause: ""the sudden bankruptcy of major banks""
+   
+   The predicted cause and the ground truth cause are essentially the same, with the only difference being the addition of the definite article ""the"" in the predicted cause. The core concept, ""sudden bankruptcy of major banks,"" is identical in both. Therefore, the cause is considered an exact match or semantically identical in meaning.
+
+2. **Effect Comparison**:
+   - Ground Truth Effect: ""Decline in investor confidence""
+   - Predicted Effect: ""investor confidence appeared to decline""
+   
+   The ground truth effect states ""Decline in investor confidence,"" while the predicted effect states ""investor confidence appeared to decline."" Both convey the same core concept that investor confidence decreased. The difference lies in the phrasing; the predicted effect uses ""appeared to decline,"" which slightly softens the assertion compared to a direct ""decline."" However, the essential meaning remains the same, as both indicate a reduction in investor confidence.
+
+Given these observations:
+
+- For the cause: The addition"
+row13,0.0,0.0,0.0,,,Increased automation in financial auditing,Reduction in accounting errors,"{""cause_score"": 0, ""effect_score"": 0}"
+row14,1.0,1.0,1.0,a reduction in government subsidies for renewable energy,decreased private investment in solar power projects,Reduction in government subsidies for renewable energy,Decreased private investment in solar power projects,"```json
+{""cause_score"": 1, ""effect_score"": 1}
+```"
+row15,0.0,0.0,0.0,the ongoing rise in remote banking services,physical bank branches saw a marked decline,Surge in remote banking services,Decline in physical bank branch numbers,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Surge in remote banking services""
+   - Predicted Cause: ""the ongoing rise in remote banking services""
+   
+   Both causes refer to an increase in remote banking services. The terms ""surge"" and ""ongoing rise"" convey a similar meaning of an upward trend. The core concept is the same, and the difference is mainly in the wording. Thus, they are semantically identical in meaning regarding the context of the cause.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Decline in physical bank branch numbers""
+   - Predicted Effect: ""physical bank branches saw a marked decline""
+   
+   Both effects talk about a decrease in physical bank branches. The phrase ""Decline in physical bank branch numbers"" and ""physical bank branches saw a marked decline"" essentially convey the same idea. The term ""marked"" adds a nuance indicating the decline was significant, but the core concept of a decline is maintained. Thus, they are also semantically similar.
+
+Given the analysis, both the cause and effect components of the predicted pair are semantically identical to their counterparts in the ground"
+row16,0.0,0.0,0.0,,,Implementation of carbon taxes,Increased operational costs for heavy industries,"{""cause_score"": 0, ""effect_score"": 0}"
+row17,0.0,0.0,0.0,The shift toward AI-driven credit scoring,increased accuracy in loan approvals,Adoption of AI-driven credit scoring,Increased accuracy in loan approvals,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+1. **Cause Comparison**:
+   - Ground Truth Cause: ""Adoption of AI-driven credit scoring""
+   - Predicted Cause: ""The shift toward AI-driven credit scoring""
+   
+   Both causes refer to the transition or movement towards using AI-driven credit scoring. The terms ""adoption"" and ""shift toward"" convey a similar meaning in this context, indicating a change or movement towards AI-driven credit scoring. Therefore, they are semantically identical in meaning regarding the context of changing to AI-driven credit scoring.
+
+2. **Effect Comparison**:
+   - Ground Truth Effect: ""Increased accuracy in loan approvals""
+   - Predicted Effect: ""increased accuracy in loan approvals""
+   
+   The predicted effect is identical to the ground truth effect. Both state ""increased accuracy in loan approvals,"" indicating no difference in meaning.
+
+Given the analysis:
+- The cause is semantically identical (Score: 1.0) because ""adoption"" and ""shift toward"" both imply a movement towards AI-driven credit scoring.
+- The effect is an exact match (Score: 1.0) as both the ground truth and predicted effects are identical.
+
+Therefore, the scoring should reflect that"
+row18,0.0,0.0,0.0,supply chain disruptions due to pandemics,inflationary pressures on consumer goods were observed,Supply chain disruptions due to pandemics,Inflationary pressures on consumer goods,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+1. **Cause Component**:
+   - Ground Truth: ""Supply chain disruptions due to pandemics""
+   - Predicted: ""supply chain disruptions due to pandemics""
+   
+   The cause in both the ground truth and the predicted pair is identical in terms of wording and meaning. The difference in case (lowercase vs. capitalized first letter) is not significant for the semantic meaning. Therefore, the cause_score should be 1.0 as it is an exact match.
+
+2. **Effect Component**:
+   - Ground Truth: ""Inflationary pressures on consumer goods""
+   - Predicted: ""inflationary pressures on consumer goods were observed""
+   
+   The core concept of the effect in both pairs is the same, which is ""inflationary pressures on consumer goods."" The predicted effect adds the phrase ""were observed,"" which indicates the occurrence or observation of the effect but does not change the core concept or meaning of the effect itself. The addition of ""were observed"" can be seen as providing a slightly different nuance (focusing on the observation rather than the state itself), but it does not alter the fundamental meaning. Thus, the effect_score can be considered 1"
+row19,0.0,0.0,0.0,,,Expanded use of blockchain in supply chain finance,Improved transparency in transactions,"{""cause_score"": 0, ""effect_score"": 0}"
+row20,1.0,1.0,1.0,rise in housing market speculation,increased risk of property price bubbles,Rise in housing market speculation,Increased risk of property price bubbles,"{""cause_score"": 1, ""effect_score"": 1}"
+row21,0.0,0.0,0.0,sanctions,reduction of foreign direct investment,Reduction of foreign direct investment due to economic sanctions,Slowed economic growth,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Evaluation**:
+   - Ground Truth Cause: ""Reduction of foreign direct investment due to economic sanctions""
+   - Predicted Cause: ""sanctions""
+   
+   The predicted cause ""sanctions"" is a part of the ground truth cause. The ground truth cause is ""Reduction of foreign direct investment due to economic sanctions,"" which implies that ""economic sanctions"" led to a reduction in foreign direct investment. The predicted cause directly mentions ""sanctions,"" which can be considered a shortened form or a core concept of ""economic sanctions."" Thus, while it doesn't capture the full nuance (i.e., the effect of sanctions on foreign direct investment), it captures the core concept that leads to the effect in the ground truth. Therefore, it's a partial match because it doesn't directly convey the reduction aspect but implies the cause (sanctions) that leads to the reduction.
+
+2. **Effect Evaluation**:
+   - Ground Truth Effect: ""Slowed economic growth""
+   - Predicted Effect: ""reduction of foreign direct investment""
+   
+   The predicted effect is ""reduction of foreign direct investment,"" which is actually the cause in the ground truth pair. The ground truth effect"
+row22,0.0,0.0,0.0,The rise in corporate mergers and acquisitions,market competition decreased,Increased corporate mergers and acquisitions,Reduction in market competition,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Increased corporate mergers and acquisitions""
+   - Predicted Cause: ""The rise in corporate mergers and acquisitions""
+   
+   Both causes refer to the same phenomenon - an increase in corporate mergers and acquisitions. The terms ""Increased"" and ""The rise in"" convey the same meaning, which is an upward trend. Therefore, the predicted cause is semantically identical to the ground truth cause.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Reduction in market competition""
+   - Predicted Effect: ""market competition decreased""
+   
+   Both effects indicate a decrease in market competition. ""Reduction in market competition"" and ""market competition decreased"" are semantically identical as they both convey the same outcome - a decline in the level of competition within the market.
+
+Given the analysis, both the cause and effect of the predicted pair are semantically identical to their respective ground truth components.
+
+- For the cause: Score = 1.0
+- For the effect: Score = 1.0
+
+Therefore, the JSON response should reflect that both components match exactly in terms of semantic meaning.
+
+{""cause_score"":"
+row23,0.0,0.0,0.0,strengthened regulations,increased administrative overhead,Strengthened anti-money laundering policies,Increased administrative overhead for banks,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Strengthened anti-money laundering policies""
+   - Predicted Cause: ""strengthened regulations""
+   
+   The ground truth cause specifically mentions ""anti-money laundering policies,"" which is a particular type of regulation. The predicted cause, ""strengthened regulations,"" is broader and encompasses not just anti-money laundering policies but any regulations that are strengthened. While ""anti-money laundering policies"" are a subset of ""regulations,"" the predicted cause is not as specific. Thus, it's a partial match because it captures the general idea of strengthening rules but lacks the specificity of the type of regulations.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased administrative overhead for banks""
+   - Predicted Effect: ""increased administrative overhead""
+   
+   The predicted effect captures the core concept of ""increased administrative overhead,"" which is present in the ground truth effect. However, it misses the detail that this effect is specifically ""for banks."" Despite this, the core concept of increased administrative overhead is maintained, making it a partial match.
+
+**Scoring**:
+- For the cause: The predicted cause is broader"
+row24,0.0,0.0,0.0,,,Shift towards digital payment systems,Reduced circulation of physical currency,"{""cause_score"": 0, ""effect_score"": 0}"
+row25,1.0,1.0,1.0,,,,,"{""cause_score"": 1.0, ""effect_score"": 1.0}"
+row26,1.0,1.0,1.0,increased frequency of forest fires in the region,reduction in biodiversity,Increased frequency of forest fires,Reduction in biodiversity,"{""cause_score"": 1.0, ""effect_score"": 1.0}"
+row27,0.0,0.0,0.0,rapid expansion of urban areas,loss of wetlands,Expansion of urban areas,Loss of wetlands,"To evaluate the predicted cause-effect pair against the ground truth pair, we need to assess both the cause and effect components separately according to the given scoring rules.
+
+1. **Cause Evaluation**:
+   - Ground Truth Cause: ""Expansion of urban areas""
+   - Predicted Cause: ""rapid expansion of urban areas""
+   
+   The predicted cause includes the word ""rapid,"" which adds a detail about the speed of the expansion. The core concept of ""expansion of urban areas"" is maintained in both the ground truth and the predicted cause. The addition of ""rapid"" does not change the fundamental meaning but adds a descriptor. Thus, the core concept is similar, and the addition does not alter the basic cause-effect relationship. Therefore, the cause can be considered as having a semantically identical meaning with a slight variation that doesn't change the core concept.
+
+2. **Effect Evaluation**:
+   - Ground Truth Effect: ""Loss of wetlands""
+   - Predicted Effect: ""loss of wetlands""
+   
+   The predicted effect is identical to the ground truth effect, with only a difference in case (""Loss"" vs ""loss""). The meaning remains the same.
+
+Given these observations:
+
+- For the cause, the score should be **1.0** because the core concept is maintained, and ""rapid"" is"
+row28,1.0,1.0,1.0,rapid ocean acidification,decreased coral reef resilience,Rapid ocean acidification,Decreased coral reef resilience,"{""cause_score"": 1, ""effect_score"": 1}"
+row29,1.0,1.0,1.0,adoption of regenerative agriculture practices,increased soil carbon sequestration,Adoption of regenerative agriculture practices,Increased soil carbon sequestration,"{""cause_score"": 1, ""effect_score"": 1}"
+row30,1.0,1.0,1.0,extensive deforestation in tropical regions,a reduction in regional rainfall,Extensive deforestation in tropical regions,Reduction in regional rainfall,"{""cause_score"": 1, ""effect_score"": 1}"
+row31,0.0,0.0,0.0,elevated currents of increased microplastic pollution,A decline in marine life populations,Increased microplastic pollution,Decline in marine life populations,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect components separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Increased microplastic pollution""
+   - Predicted Cause: ""elevated currents of increased microplastic pollution""
+
+The predicted cause includes the core concept of ""increased microplastic pollution,"" which matches the ground truth cause. However, it adds an additional detail, ""elevated currents of,"" which is not present in the ground truth cause. The addition of ""elevated currents of"" suggests a specific mechanism or condition under which microplastic pollution is considered, potentially implying the transport or distribution of microplastics. Despite this addition, the core concept of ""increased microplastic pollution"" remains intact. Therefore, the predicted cause is not an exact match but retains the core concept with additional detail. This suggests a partial match.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Decline in marine life populations""
+   - Predicted Effect: ""A decline in marine life populations""
+
+The predicted effect is essentially the same as the ground truth effect, with the only difference being the addition of the indefinite article ""A"" at the beginning. This minor difference does not alter the meaning or the core concept"
+row32,1.0,1.0,1.0,widespread drought conditions,Reduced agricultural productivity,Widespread drought conditions,Reduced agricultural productivity,"{""cause_score"": 1, ""effect_score"": 1}"
+row33,1.0,1.0,1.0,intensified hurricane activity,increased coastal infrastructure damage,Intensified hurricane activity,Increased coastal infrastructure damage,"{""cause_score"": 1, ""effect_score"": 1}"
+row34,1.0,1.0,1.0,melting permafrost in polar regions,increased methane release,Melting permafrost in polar regions,Increased methane release,"{""cause_score"": 1, ""effect_score"": 1}"
+row35,0.0,0.0,0.0,implementation of plastic bag bans,reduction in plastic waste in areas,Implementation of plastic bag bans,Reduction in plastic waste,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Implementation of plastic bag bans""
+   - Predicted Cause: ""implementation of plastic bag bans""
+   
+   The predicted cause is identical to the ground truth cause, with the only difference being the capitalization. Since capitalization does not change the meaning, the causes are considered to have an exact match.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Reduction in plastic waste""
+   - Predicted Effect: ""reduction in plastic waste in areas""
+   
+   The core concept of both effects is the ""reduction in plastic waste."" The predicted effect adds ""in areas,"" which provides additional detail but does not alter the core concept. The addition of ""in areas"" could be seen as specifying the context or location of the reduction, but it doesn't change the fundamental effect being described. Thus, the core concept remains similar, but there is some additional detail.
+
+Given these observations:
+
+- For the cause, since there's an exact match in meaning, the score should be 1.0.
+- For the effect, the core concept is similar (""reduction in plastic waste""), but there's an additional detail ("""
+row36,0.0,0.0,0.0,large‑scale adoption of electric vehicles,a reduction in urban air pollution on transit corridors,Adoption of electric vehicles,Reduction in urban air pollution,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect components separately.
+
+1. **Cause Component**:
+   - Ground Truth Cause: ""Adoption of electric vehicles""
+   - Predicted Cause: ""large‑scale adoption of electric vehicles""
+   
+   The predicted cause includes the core concept of ""adoption of electric vehicles"" but adds the detail ""large‑scale."" While the addition of ""large‑scale"" provides more specificity, it doesn't change the fundamental cause. The core concept remains the same, but the added detail could be considered important for the scale of the effect. Thus, it's a partial match because it adds a significant detail not present in the ground truth.
+
+2. **Effect Component**:
+   - Ground Truth Effect: ""Reduction in urban air pollution""
+   - Predicted Effect: ""a reduction in urban air pollution on transit corridors""
+   
+   The predicted effect includes the core concept of ""reduction in urban air pollution"" but adds the specificity ""on transit corridors."" The ground truth effect is more general, concerning overall urban air pollution, while the predicted effect narrows it down to a specific aspect (transit corridors). This addition changes the scope of the effect, making it a partial match because it adds a detail that"
+row37,1.0,1.0,1.0,rising global average temperatures,increased frequency of heatwaves,Rising global average temperatures,Increased frequency of heatwaves,"{""cause_score"": 1, ""effect_score"": 1}"
+row38,1.0,1.0,1.0,extensive fertilizer runoff,Increased eutrophication in aquatic ecosystems,Extensive fertilizer runoff,Increased eutrophication in aquatic ecosystems,"{""cause_score"": 1, ""effect_score"": 1}"
+row39,1.0,1.0,1.0,enhanced public transportation infrastructure,reduced urban greenhouse gas emissions,Enhanced public transportation infrastructure,Reduced urban greenhouse gas emissions,"{""cause_score"": 1, ""effect_score"": 1}"
+row40,1.0,1.0,1.0,rapid glacial retreat in mountainous regions,reduced freshwater availability,Rapid glacial retreat in mountainous regions,Reduced freshwater availability,"{""cause_score"": 1, ""effect_score"": 1}"
+row41,0.0,0.0,0.0,expansion of offshore wind farms reached commissioning milestones,increased renewable energy production,Expansion of offshore wind farms,Increased renewable energy production,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect components separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Expansion of offshore wind farms""
+   - Predicted Cause: ""expansion of offshore wind farms reached commissioning milestones""
+   
+   The predicted cause includes the core concept of ""expansion of offshore wind farms"" but adds an additional detail ""reached commissioning milestones."" The core concept is the same, but the predicted cause provides more specific information about the stage or status of the expansion. Despite this addition, the fundamental cause (expansion of offshore wind farms) is still captured. Thus, it can be considered a partial match because it retains the core concept but with additional detail.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased renewable energy production""
+   - Predicted Effect: ""increased renewable energy production""
+   
+   The predicted effect is identical to the ground truth effect. Both state ""increased renewable energy production,"" indicating an exact match in terms of the effect.
+
+Given the analysis:
+- The cause is a partial match because it includes the core concept with additional detail, so it scores 0.5.
+- The effect is an exact match, so it scores 1.0"
+row42,1.0,0.5,0.75,increased urban heat islands due to construction,elevated energy consumption for cooling across neighborhoods,Increased urban heat islands due to construction,Elevated energy consumption for cooling,"{""cause_score"": 1, ""effect_score"": 0.5}"
+row43,1.0,1.0,1.0,development of large-scale solar farms,habitat disruption for wildlife,Development of large-scale solar farms,Habitat disruption for wildlife,"{""cause_score"": 1, ""effect_score"": 1}"
+row44,0.0,0.0,0.0,severe soil erosion due to intensive agriculture,reduced land productivity on parcels,Severe soil erosion due to intensive agriculture,Reduced land productivity,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Severe soil erosion due to intensive agriculture""
+   - Predicted Cause: ""severe soil erosion due to intensive agriculture""
+   
+   The predicted cause is identical to the ground truth cause, with the only difference being the case (lowercase vs. title case). This is considered an exact match because the meaning is semantically identical.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Reduced land productivity""
+   - Predicted Effect: ""reduced land productivity on parcels""
+   
+   The predicted effect has the core concept similar to the ground truth effect (""reduced land productivity""), but it adds an additional detail (""on parcels""). The addition of ""on parcels"" provides more specificity regarding where the land productivity is reduced, but it doesn't change the fundamental meaning of ""reduced land productivity."" The core concept remains the same.
+
+Given these observations:
+
+- For the cause, since it's an exact match, the score should be 1.0.
+- For the effect, the core concept is the same, but there's an additional detail (""on parcels""). This can be considered a partial match because the essential meaning is"
+row45,1.0,1.0,1.0,adoption of stringent emissions regulations,reduction in industrial pollution,Adoption of stringent emissions regulations,Reduction in industrial pollution,"{""cause_score"": 1, ""effect_score"": 1}"
+row46,0.0,0.0,0.0,increased brine discharge,impacting marine ecosystems,Increased desalination plant operations,Increased brine discharge impacting marine ecosystems,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Increased desalination plant operations""
+   - Predicted Cause: ""increased brine discharge""
+   
+   The ground truth cause is about the operation of desalination plants, which implies the process or activity that leads to a certain outcome. The predicted cause is ""increased brine discharge,"" which is actually a consequence or result of increased desalination plant operations. Although they are related, they are not the same thing. The predicted cause is more of an intermediate effect or a step in the causal chain rather than the initial cause. Therefore, the predicted cause does not exactly match the ground truth cause but is related. It captures a part of the causal chain but not the root cause as defined in the ground truth. Hence, it is a partial match.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased brine discharge impacting marine ecosystems""
+   - Predicted Effect: ""impacting marine ecosystems""
+   
+   The ground truth effect describes a specific consequence (""Increased brine discharge"") and its impact (""impacting marine ecosystems""). The predicted effect directly states ""impacting marine ecosystems,"" which is part of the ground"
+row47,0.0,0.0,0.0,increased prevalence of invasive species due to global trade,loss of native species in habitats,Increased prevalence of invasive species due to global trade,Loss of native species,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Increased prevalence of invasive species due to global trade""
+   - Predicted Cause: ""increased prevalence of invasive species due to global trade""
+   
+   The predicted cause is essentially the same as the ground truth cause, with the only difference being the case (lowercase vs. uppercase). The meaning and the details are identical. Therefore, the cause is an exact match.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Loss of native species""
+   - Predicted Effect: ""loss of native species in habitats""
+   
+   The predicted effect includes the core concept of ""loss of native species,"" which matches the ground truth effect. However, it adds an additional detail (""in habitats""). The phrase ""in habitats"" provides more context but doesn't change the core concept that native species are being lost. The addition of ""in habitats"" can be seen as an elaboration rather than a deviation from the ground truth effect. The core concept remains the same.
+
+Given these observations:
+
+- For the cause, the score should be **1.0** because it's an exact match.
+- For the effect,"
+row48,1.0,1.0,1.0,expansion of protected marine reserves,recovery of fish populations,Expansion of protected marine reserves,Recovery of fish populations,"{""cause_score"": 1, ""effect_score"": 1}"
+row49,0.0,0.0,0.0,urban tree planting programs,mitigation of urban air pollution along streets participating in implementation,Implementation of urban tree planting programs,Mitigation of urban air pollution,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect components separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Implementation of urban tree planting programs""
+   - Predicted Cause: ""urban tree planting programs""
+   
+   The predicted cause is missing the word ""implementation of,"" but the core concept, ""urban tree planting programs,"" remains the same. The essence of the cause (urban tree planting programs being put into action) is preserved, even though the predicted cause is slightly more concise. Thus, the core concept is similar, but there's a minor difference in wording. The score for the cause should reflect that the main idea is captured.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Mitigation of urban air pollution""
+   - Predicted Effect: ""mitigation of urban air pollution along streets participating in implementation""
+   
+   The predicted effect includes additional details (""along streets participating in implementation"") not present in the ground truth effect. The ground truth effect focuses on the general mitigation of urban air pollution, while the predicted effect specifies a particular context or location for this mitigation. Although the core concept of mitigating urban air pollution is maintained, the addition of specific details changes the scope of the effect. The question"
+row50,1.0,1.0,1.0,rapid melting of Antarctic ice shelves,acceleration of global sea‑level rise,Rapid melting of Antarctic ice shelves,Acceleration of global sea-level rise,"{""cause_score"": 1, ""effect_score"": 1}"
+row51,1.0,1.0,1.0,,,,,"{""cause_score"": 1.0, ""effect_score"": 1.0}"
+row52,0.0,0.0,0.0,new algorithms being tested for diverse applications,The field of quantum computing is evolving rapidly,Increased adoption of quantum computing algorithms,Enhanced computational speeds for cryptographic analysis,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+1. **Cause Analysis**:
+   - **Ground Truth Cause**: ""Increased adoption of quantum computing algorithms""
+   - **Predicted Cause**: ""new algorithms being tested for diverse applications""
+
+   The ground truth cause focuses on the ""increased adoption"" of quantum computing algorithms, implying their growing use or implementation. The predicted cause mentions ""new algorithms being tested,"" which relates to the development or experimentation phase of algorithms, not necessarily their adoption. While both are related to quantum computing algorithms, the ground truth emphasizes adoption, and the predicted cause emphasizes testing new algorithms. The core concept involves quantum computing algorithms, but the details differ (adoption vs. testing). Thus, it's a partial match because both relate to the progression or development of quantum computing algorithms, but they capture different aspects.
+
+2. **Effect Analysis**:
+   - **Ground Truth Effect**: ""Enhanced computational speeds for cryptographic analysis""
+   - **Predicted Effect**: ""The field of quantum computing is evolving rapidly""
+
+   The ground truth effect is specific to ""enhanced computational speeds for cryptographic analysis,"" indicating a direct benefit of quantum computing in a particular domain. The predicted effect is more general, stating that ""the field of"
+row53,0.0,0.0,0.0,the rise of machine learning models that can detect diseases with increasing accuracy,Healthcare diagnostics are benefiting,Increased use of machine learning in healthcare diagnostics,Improved accuracy in disease detection,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect components separately.
+
+### Cause Analysis
+
+- **Ground Truth Cause**: ""Increased use of machine learning in healthcare diagnostics""
+- **Predicted Cause**: ""the rise of machine learning models that can detect diseases with increasing accuracy""
+
+The ground truth cause focuses on the ""increased use of machine learning"" in diagnostics, implying a broader application or integration of machine learning techniques. The predicted cause, while related, specifically mentions ""the rise of machine learning models"" that are more accurate, which is somewhat more specific but still captures the essence of machine learning becoming more prevalent or advanced in disease detection.
+
+Both causes are related to the advancement or increased application of machine learning in healthcare diagnostics. However, the predicted cause is more specific about the aspect of ""models"" and ""detecting diseases with increasing accuracy,"" which slightly deviates from the general ""increased use"" mentioned in the ground truth.
+
+**Cause Score**: Given that the core concept (machine learning becoming more significant in healthcare diagnostics) is similar but the predicted cause provides a slightly different perspective (focusing on the models and their accuracy), it is reasonable to consider it a partial match. Thus, the cause score is **0.5"
+row54,0.0,0.0,0.0,as more devices are interconnected,the risk of vulnerabilities in security frameworks continues to be a significant concern for cybersecurity professionals,Widespread adoption of IoT devices,Increased vulnerability to cyberattacks,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - **Ground Truth Cause**: ""Widespread adoption of IoT devices""
+   - **Predicted Cause**: ""as more devices are interconnected""
+   
+   The ground truth cause mentions the ""widespread adoption of IoT devices,"" which implies an increase in the number of connected devices. The predicted cause, ""as more devices are interconnected,"" conveys a similar idea - that the interconnection of more devices is happening. Both causes are talking about an increase in the number of devices being connected, which is a core concept related to IoT. Therefore, they are semantically similar, though the predicted cause is more general and doesn't explicitly mention ""IoT devices."" However, the essence of increasing interconnection is captured. Thus, the cause can be considered a partial match because it captures the concept of more devices being connected but doesn't explicitly limit it to IoT devices.
+
+2. **Effect Analysis**:
+   - **Ground Truth Effect**: ""Increased vulnerability to cyberattacks""
+   - **Predicted Effect**: ""the risk of vulnerabilities in security frameworks continues to be a significant concern for cybersecurity professionals""
+   
+   The ground truth effect is about the"
+row55,0.0,0.0,0.0,The shift towards remote work,a surge in the use of various collaboration technologies,Growth in remote work technology adoption,Increased demand for cybersecurity solutions,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Growth in remote work technology adoption""
+   - Predicted Cause: ""The shift towards remote work""
+
+The ground truth cause focuses on the ""growth in remote work technology adoption,"" which implies an increase in the use or implementation of technologies that facilitate remote work. The predicted cause, ""The shift towards remote work,"" refers to the overall movement or transition towards working remotely. While related, the ground truth cause is more specific to technology adoption, whereas the predicted cause is broader, encompassing not just technology but any aspect of work that shifts to remote. Despite this, both causes are related to the concept of ""remote work."" Thus, they share a core concept but differ in specificity. The predicted cause can be considered a partial match because it captures the essence of moving towards remote work, which inherently involves technology adoption.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased demand for cybersecurity solutions""
+   - Predicted Effect: ""a surge in the use of various collaboration technologies""
+
+The ground truth effect is about the increased demand for cybersecurity solutions, which is a specific type of technology or service. The predicted"
+row56,0.0,0.0,0.0,5G infrastructure,faster wireless speeds and more reliable connections,Development of 5G infrastructure,Reduced latency in wireless communication,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Development of 5G infrastructure""
+   - Predicted Cause: ""5G infrastructure""
+   
+   The predicted cause, ""5G infrastructure,"" is very similar to the ground truth cause, ""Development of 5G infrastructure."" The core concept of ""5G infrastructure"" is present in both. The ground truth cause specifies ""development,"" which implies the process or result of building or establishing 5G infrastructure. While ""5G infrastructure"" could refer to either the infrastructure itself or its development, the difference is subtle, and the essential idea is captured. Thus, the cause can be considered a partial match because it lacks the explicit mention of ""development,"" but it still conveys the same overall concept.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Reduced latency in wireless communication""
+   - Predicted Effect: ""faster wireless speeds and more reliable connections""
+   
+   The ground truth effect focuses on ""reduced latency,"" which is a specific aspect of wireless communication performance. The predicted effect mentions ""faster wireless speeds and more reliable connections."" Faster wireless speeds can be related to reduced latency since"
+row57,0.0,0.0,0.0,facial recognition technology finds broader application in sectors ranging from security to retail,privacy concerns are also escalating,Increased application of facial recognition technologies,Heightened privacy concerns,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Increased application of facial recognition technologies""
+   - Predicted Cause: ""facial recognition technology finds broader application in sectors ranging from security to retail""
+   
+   The ground truth cause mentions the ""increased application of facial recognition technologies,"" which implies a broader or more extensive use of the technology. The predicted cause states that ""facial recognition technology finds broader application in sectors ranging from security to retail,"" indicating not just an increase in application but also specifying the sectors where this increase is happening. Despite the difference in wording and the additional detail in the predicted cause, the core concept of facial recognition technology being used more widely is captured in both. Therefore, the predicted cause is semantically similar to the ground truth cause, with the main difference being the additional specificity in the predicted cause regarding the sectors involved.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Heightened privacy concerns""
+   - Predicted Effect: ""privacy concerns are also escalating""
+   
+   The ground truth effect is about ""heightened privacy concerns,"" and the predicted effect mentions that ""privacy concerns are also escalating."" Both phrases convey the idea"
+row58,0.0,0.0,0.0,By processing information closer to the source,companies aim to reduce latency,Implementation of edge computing,Reduced data transmission latency,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - **Ground Truth Cause**: ""Implementation of edge computing""
+   - **Predicted Cause**: ""By processing information closer to the source""
+   
+   Edge computing is a concept where data processing occurs at or near the source of the data, i.e., closer to where the data is generated. Thus, ""processing information closer to the source"" is a description that aligns with the concept of edge computing. Both the ground truth and predicted causes are referring to the same core concept, albeit the predicted cause describes it in a more generic manner. Therefore, the predicted cause captures the essence of the ground truth cause.
+
+2. **Effect Analysis**:
+   - **Ground Truth Effect**: ""Reduced data transmission latency""
+   - **Predicted Effect**: ""companies aim to reduce latency""
+   
+   The ground truth effect is about the actual outcome of reducing data transmission latency. The predicted effect mentions that companies aim to reduce latency, which indicates the intention or goal rather than the actual outcome. While the core concept of reducing latency is present in both, the predicted effect changes the focus from the actual reduction in latency to the intention of companies to achieve this."
+row59,0.0,0.0,0.0,Autonomous vehicle technology is seen as a solution to reducing human error in driving,potentially lowering traffic accidents,Rise in autonomous vehicle technology adoption,Reduction in traffic accidents,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Rise in autonomous vehicle technology adoption""
+   - Predicted Cause: ""Autonomous vehicle technology is seen as a solution to reducing human error in driving""
+   
+   The ground truth cause focuses on the adoption of autonomous vehicle technology, implying its increased use or implementation. The predicted cause, while related, focuses on the perception of autonomous vehicle technology as a solution to human error. Although they are related, the ground truth cause is about the action (adoption) of autonomous vehicle technology, and the predicted cause is about the perception or rationale behind its potential adoption. They are not semantically identical but share a core concept related to autonomous vehicle technology. Thus, the predicted cause is a partial match because it captures the underlying reason for the adoption (reducing human error) but doesn't directly state the adoption itself.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Reduction in traffic accidents""
+   - Predicted Effect: ""potentially lowering traffic accidents""
+   
+   The ground truth effect is a straightforward statement about reducing traffic accidents. The predicted effect conveys a similar message but with a softer tone using ""potentially"
+row60,0.0,0.0,0.0,Retailers are increasingly turning to augmented reality (AR) to offer immersive shopping experiences,its potential to drive deeper engagement is a growing topic of interest for marketers and technologists alike,Expanded use of augmented reality in retail,Enhanced customer engagement,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Expanded use of augmented reality in retail""
+   - Predicted Cause: ""Retailers are increasingly turning to augmented reality (AR) to offer immersive shopping experiences""
+   
+   The ground truth cause mentions the ""expanded use of augmented reality in retail,"" which implies an increase in the application of AR within the retail sector. The predicted cause states that ""retailers are increasingly turning to augmented reality (AR) to offer immersive shopping experiences,"" indicating a similar increase in the use of AR by retailers. Although the predicted cause provides more context by mentioning ""immersive shopping experiences,"" the core concept of an increasing trend in the use of AR in retail is maintained. Thus, the predicted cause is semantically similar to the ground truth cause, capturing the essence of the increasing use of AR in retail. Therefore, the cause score should reflect a high level of similarity.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Enhanced customer engagement""
+   - Predicted Effect: ""its potential to drive deeper engagement is a growing topic of interest for marketers and technologists alike""
+   
+   The ground truth effect is ""Enhanced"
+row61,0.0,0.0,0.0,Generative AI tools are gaining ground in content creation,concerns about creativity and automation in the arts continue to spark discussions in both technological and creative communities,Adoption of generative AI models,Increased productivity in content creation,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Adoption of generative AI models""
+   - Predicted Cause: ""Generative AI tools are gaining ground in content creation""
+   
+   The ground truth cause talks about the ""adoption of generative AI models,"" which implies the acceptance or use of these models. The predicted cause mentions ""Generative AI tools are gaining ground in content creation,"" indicating that these tools are becoming more prevalent or widely used in content creation. Both statements convey the idea that generative AI is becoming more utilized or accepted in its respective domain (not limited to content creation in the ground truth, but it's a reasonable inference). The core concept of generative AI becoming more used or accepted is similar, though the predicted cause adds a specific context (content creation). Thus, the cause can be considered a partial match because it adds a detail (content creation) not present in the ground truth but still relates to the broader concept of adopting or using generative AI.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased productivity in content creation""
+   - Predicted Effect: ""concerns about creativity and automation in the arts continue to spark discussions in"
+row62,0.0,0.0,0.0,Blockchain technology is being increasingly applied to enhance transparency in supply chains,allowing for better tracking of goods,Increased use of blockchain in supply chain management,Improved tracking of goods,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect statements.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Increased use of blockchain in supply chain management""
+   - Predicted Cause: ""Blockchain technology is being increasingly applied to enhance transparency in supply chains""
+   
+   Both causes refer to the increasing application of blockchain technology in supply chain management. The ground truth cause is more general, while the predicted cause adds the detail that it's being used to ""enhance transparency."" Despite this additional detail, the core concept of increasing blockchain use in supply chains is present in both. Thus, they can be considered to have a very similar meaning, with the predicted cause providing a bit more context on why blockchain is being used.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Improved tracking of goods""
+   - Predicted Effect: ""allowing for better tracking of goods""
+   
+   The ground truth effect states ""Improved tracking of goods,"" while the predicted effect states ""allowing for better tracking of goods."" Both effects convey the idea that there's an enhancement in the tracking of goods. The difference lies in the wording: ""Improved"" vs. ""better,"" and the predicted effect is phrased as a consequence (""allowing for"
+row63,0.0,0.0,0.0,Neuromorphic computing is touted as a transformative technology that mimics the brain's processes,to improve AI efficiency,Development of neuromorphic computing chips,Increased efficiency in artificial intelligence processing,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - **Ground Truth Cause**: ""Development of neuromorphic computing chips""
+   - **Predicted Cause**: ""Neuromorphic computing is touted as a transformative technology that mimics the brain's processes""
+   
+   The ground truth cause focuses on the ""development of neuromorphic computing chips,"" which is a specific aspect of neuromorphic computing. The predicted cause talks about ""neuromorphic computing"" in a broader sense, highlighting its nature and potential. While the predicted cause captures the essence of what neuromorphic computing is, it doesn't directly mention the development of chips. However, the concept of neuromorphic computing inherently includes the development or application of such technology, potentially encompassing chip development. Thus, there's a partial match because both are related to neuromorphic computing, but the predicted cause is broader and doesn't directly focus on chip development.
+
+2. **Effect Analysis**:
+   - **Ground Truth Effect**: ""Increased efficiency in artificial intelligence processing""
+   - **Predicted Effect**: ""to improve AI efficiency""
+   
+   Both the ground truth effect and the predicted effect are centered around improving the efficiency of artificial intelligence. The phrases ""Increased efficiency in artificial intelligence"
+row64,0.0,0.0,0.0,traditional broadband infrastructure is limited,Satellite-based internet services are playing a pivotal role in connecting remote rural areas,Expansion of satellite-based internet services,Improved connectivity in rural areas,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Expansion of satellite-based internet services""
+   - Predicted Cause: ""traditional broadband infrastructure is limited""
+   
+   The ground truth cause focuses on the expansion or growth of satellite-based internet services as the cause. In contrast, the predicted cause points to the limitation of traditional broadband infrastructure. While these are not directly equivalent, they are related in the context that the limitation of traditional broadband infrastructure can lead to or necessitate the expansion of satellite-based internet services. Thus, the predicted cause provides a reason or a precursor for the ground truth cause rather than being a direct match. Hence, it's a partial match because it explains a potential reason behind the expansion of satellite-based internet services.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Improved connectivity in rural areas""
+   - Predicted Effect: ""Satellite-based internet services are playing a pivotal role in connecting remote rural areas""
+   
+   The ground truth effect is about the improvement in connectivity in rural areas. The predicted effect states that satellite-based internet services are crucial for connecting remote rural areas. Both effects essentially convey that satellite-based internet services are enhancing or enabling"
+row65,0.0,0.0,0.0,Biometric authentication systems are being implemented across various sectors,to increase security and streamline user experiences,Widespread deployment of biometric authentication,Increased user account security,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Widespread deployment of biometric authentication""
+   - Predicted Cause: ""Biometric authentication systems are being implemented across various sectors""
+   
+   Both causes refer to the implementation or deployment of biometric authentication. The ground truth specifies ""widespread deployment,"" while the predicted cause mentions ""being implemented across various sectors."" These phrases convey a similar idea, indicating a broad or extensive adoption of biometric authentication. Thus, they are semantically similar.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased user account security""
+   - Predicted Effect: ""to increase security and streamline user experiences""
+   
+   The ground truth effect focuses solely on ""increased user account security,"" which is a specific aspect of security. The predicted effect mentions ""to increase security and streamline user experiences,"" which includes increasing security (a broader concept that can encompass user account security) and an additional aspect of improving user experiences. While the core concept of increasing security is present in both, the predicted effect includes an extra detail (streamlining user experiences) not mentioned in the ground truth.
+
+Given these observations:
+
+- For the cause, the predicted"
+row66,0.0,0.0,0.0,the advancement of predictive analytics tools,businesses are better equipped to anticipate market shifts and disruptions in the supply chain,Enhanced predictive analytics capabilities,Improved supply chain resilience,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Enhanced predictive analytics capabilities""
+   - Predicted Cause: ""the advancement of predictive analytics tools""
+
+Both causes relate to the improvement or development of predictive analytics. The ground truth focuses on ""capabilities,"" while the predicted cause mentions ""advancement of predictive analytics tools."" The core concept here involves the enhancement or improvement of predictive analytics, whether it's through capabilities or tools. These are closely related since better tools can lead to enhanced capabilities. Thus, they can be considered to have a similar meaning, focusing on the improvement of predictive analytics.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Improved supply chain resilience""
+   - Predicted Effect: ""businesses are better equipped to anticipate market shifts and disruptions in the supply chain""
+
+The ground truth effect is about improving supply chain resilience. The predicted effect talks about businesses being better equipped to anticipate market shifts and supply chain disruptions. Anticipating disruptions is a key aspect of improving resilience. Thus, being better equipped to anticipate disruptions can lead to or is a part of improving supply chain resilience. The predicted effect provides a more detailed explanation or a mechanism through which"
+row67,0.0,0.0,0.0,The widespread adoption of cloud storage solutions,has opened up new possibilities for businesses seeking to scale efficiently,Implementation of cloud-based data storage,Increased scalability for businesses,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Implementation of cloud-based data storage""
+   - Predicted Cause: ""The widespread adoption of cloud storage solutions""
+
+Both causes refer to the adoption or implementation of cloud storage. The terms ""implementation"" and ""widespread adoption"" convey a similar idea of cloud storage being utilized by businesses or organizations. ""Cloud-based data storage"" and ""cloud storage solutions"" are also semantically similar, as they both refer to storing data in cloud environments. Therefore, the causes are semantically identical in meaning, focusing on the utilization of cloud storage.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased scalability for businesses""
+   - Predicted Effect: ""has opened up new possibilities for businesses seeking to scale efficiently""
+
+The ground truth effect mentions ""increased scalability,"" which directly relates to the ability of businesses to scale. The predicted effect states that it ""has opened up new possibilities for businesses seeking to scale efficiently,"" which implies that businesses can now scale more effectively or efficiently. While ""increased scalability"" and ""opened up new possibilities for scaling efficiently"" are not identical, they convey the same core concept"
+row68,0.0,0.0,0.0,Regulatory pressures on social media platforms,calls for more transparent content moderation practices,Increased regulatory scrutiny on social media algorithms,Enhanced transparency in content moderation,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Increased regulatory scrutiny on social media algorithms""
+   - Predicted Cause: ""Regulatory pressures on social media platforms""
+   
+   The ground truth cause mentions ""increased regulatory scrutiny"" on ""social media algorithms,"" while the predicted cause refers to ""regulatory pressures"" on ""social media platforms."" The core concept of regulatory action is present in both. ""Regulatory scrutiny"" and ""regulatory pressures"" convey a similar idea of regulatory bodies exerting influence. However, ""social media algorithms"" is more specific than ""social media platforms."" Despite this difference, the overall idea of regulatory influence on social media is maintained. Thus, the cause can be considered a partial match because it captures the essence of regulatory action on social media but lacks the specificity of targeting ""algorithms.""
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Enhanced transparency in content moderation""
+   - Predicted Effect: ""calls for more transparent content moderation practices""
+   
+   The ground truth effect is about achieving ""enhanced transparency in content moderation,"" while the predicted effect mentions ""calls for more transparent content moderation practices."" Both effects revol"
+row69,0.0,0.0,0.0,Software-defined networking (SDN),transforming network management by allowing more flexible control over configurations,Adoption of software-defined networking (SDN),Increased flexibility in network management,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Adoption of software-defined networking (SDN)""
+   - Predicted Cause: ""Software-defined networking (SDN)""
+
+The ground truth cause mentions the ""adoption"" of SDN, implying the act or process of starting to use SDN. The predicted cause simply states ""Software-defined networking (SDN)"" without explicitly mentioning ""adoption."" However, the core concept of SDN is present in both. The difference lies in the nuance of whether SDN is being adopted or is simply the technology in question. Despite this, the essential element, ""SDN,"" is the same, and the context implies that the adoption or use of SDN is what's being referred to. Thus, the core concept is similar, but there's a slight difference in detail.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased flexibility in network management""
+   - Predicted Effect: ""transforming network management by allowing more flexible control over configurations""
+
+The ground truth effect highlights ""increased flexibility in network management."" The predicted effect talks about ""transforming network management by allowing more flexible control over configurations."" Both effects convey the idea that"
+row70,0.0,0.0,0.0,the demand for cloud services and digital infrastructure grows,the energy consumption of data centers,Expansion of data center infrastructure,Increased energy consumption,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect components separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Expansion of data center infrastructure""
+   - Predicted Cause: ""the demand for cloud services and digital infrastructure grows""
+
+The ground truth cause focuses on the expansion of data center infrastructure, which implies an increase in the physical capacity or resources of data centers. The predicted cause talks about the growing demand for cloud services and digital infrastructure. While the demand for cloud services and digital infrastructure growing is a driver for the expansion of data center infrastructure, they are not exactly the same thing. The predicted cause is more about the reason behind the expansion rather than the expansion itself. Thus, they are related but not semantically identical. The core concept is similar in that both are related to the increase in data center infrastructure or its usage, but the predicted cause is more about the underlying reason (demand) rather than the action (expansion). Therefore, it's a partial match.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Increased energy consumption""
+   - Predicted Effect: ""the energy consumption of data centers""
+
+The ground truth effect is about an increase in energy consumption, which is quite general. The predicted effect"
+row71,0.0,0.0,0.0,The rise of autonomous delivery drones,reduce reliance on human-operated vehicles,Adoption of autonomous drones for deliveries,Reduction in human-operated vehicle use,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Adoption of autonomous drones for deliveries""
+   - Predicted Cause: ""The rise of autonomous delivery drones""
+   
+   Both causes refer to the increasing use or implementation of drones that operate autonomously for the purpose of delivery. The core concept is the same: the use of autonomous drones for deliveries. The wording differs slightly, but the meaning is semantically identical. Therefore, the cause score should reflect an exact or very similar match.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Reduction in human-operated vehicle use""
+   - Predicted Effect: ""reduce reliance on human-operated vehicles""
+   
+   Both effects talk about decreasing the dependency or use of vehicles operated by humans. The ground truth mentions ""use,"" while the predicted effect mentions ""reliance."" These terms, in this context, convey a very similar idea - that as autonomous drones are used more, there will be less need or dependency on human-operated vehicles. Thus, the effect is also a semantically identical match.
+
+Given the analysis, both the cause and effect components of the predicted pair are semantically identical to their"
+row72,0.0,0.0,0.0,Telemedicine is offering new ways to provide healthcare services,particularly to remote and underserved populations,Increased reliance on telemedicine,Improved access to healthcare services,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+1. **Cause Analysis**:
+   - **Ground Truth Cause**: ""Increased reliance on telemedicine""
+   - **Predicted Cause**: ""Telemedicine is offering new ways to provide healthcare services""
+   
+   The ground truth cause focuses on the ""increased reliance"" on telemedicine, implying a growing dependence or usage. The predicted cause, while related, emphasizes that telemedicine is ""offering new ways"" to provide healthcare, which is somewhat different. The core concept of telemedicine is present in both, but they capture different aspects. The ground truth is about the extent of use, while the predicted cause is about the innovation or method it brings. Thus, they are related but not exactly the same. This can be considered a partial match because both are about telemedicine but convey different specific ideas.
+
+2. **Effect Analysis**:
+   - **Ground Truth Effect**: ""Improved access to healthcare services""
+   - **Predicted Effect**: ""particularly to remote and underserved populations""
+   
+   The ground truth effect is about ""improved access"" to healthcare services in general. The predicted effect specifies that this improvement is ""particularly"" for ""remote and underserved populations"
+row73,0.0,0.0,0.0,The growth of open-source software,driving innovation by allowing collaborative development across various tech communities,Widespread use of open-source software,Accelerated innovation in technology communities,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Widespread use of open-source software""
+   - Predicted Cause: ""The growth of open-source software""
+   
+   Both causes refer to the increasing prevalence or adoption of open-source software. ""Widespread use"" and ""The growth"" convey a similar idea of open-source software becoming more common or expanding. Thus, they are semantically similar, capturing the concept of open-source software becoming more prevalent.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Accelerated innovation in technology communities""
+   - Predicted Effect: ""driving innovation by allowing collaborative development across various tech communities""
+   
+   Both effects talk about the impact on innovation within technology or tech communities. The ground truth mentions ""Accelerated innovation,"" while the predicted effect talks about ""driving innovation."" Both phrases imply a positive impact on innovation. The predicted effect further elaborates on how this is achieved (""by allowing collaborative development""), which is an additional detail rather than a contradiction. The core concept of enhancing or promoting innovation is maintained.
+
+Given these observations:
+
+- For the cause, the predicted and ground truth are semantically similar,"
+row74,0.0,0.0,0.0,Graphics processing units (GPUs) have become integral to artificial intelligence training,enabling more efficient computation,Enhanced GPU computational capabilities,Improved performance in AI training tasks,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - **Ground Truth Cause**: ""Enhanced GPU computational capabilities""
+   - **Predicted Cause**: ""Graphics processing units (GPUs) have become integral to artificial intelligence training""
+   
+   The ground truth cause focuses on the enhancement or improvement in GPU computational capabilities. The predicted cause, while related, emphasizes the importance or integral role of GPUs in AI training rather than specifically mentioning an enhancement in their capabilities. Although both are related to GPUs and AI, the predicted cause doesn't directly convey the idea of ""enhanced capabilities."" Thus, it's a partial match because it doesn't directly address the improvement or enhancement aspect.
+
+2. **Effect Analysis**:
+   - **Ground Truth Effect**: ""Improved performance in AI training tasks""
+   - **Predicted Effect**: ""enabling more efficient computation""
+   
+   The ground truth effect is about the improvement in performance for AI training tasks. The predicted effect talks about enabling more efficient computation. Both effects are related to the outcome of using GPUs in AI training, with ""improved performance"" and ""more efficient computation"" being closely related concepts. ""More efficient computation"" can be seen as a part of or contributing to"
+row75,0.0,0.0,0.0,Digital twins are increasingly used in manufacturing to simulate and optimize operations,companies are realizing the potential for increased efficiency,Increased application of digital twins in manufacturing,Optimized operational efficiency,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and effect components separately.
+
+### Cause Analysis
+
+- **Ground Truth Cause**: ""Increased application of digital twins in manufacturing""
+- **Predicted Cause**: ""Digital twins are increasingly used in manufacturing to simulate and optimize operations""
+
+Both causes discuss the increasing use of digital twins in manufacturing. The ground truth cause is more general, while the predicted cause adds more detail by mentioning that digital twins are used ""to simulate and optimize operations."" Despite this additional detail, the core concept of ""increased use/application of digital twins in manufacturing"" is present in both. Therefore, the predicted cause captures the essence of the ground truth cause, with the additional detail not altering the fundamental meaning.
+
+### Effect Analysis
+
+- **Ground Truth Effect**: ""Optimized operational efficiency""
+- **Predicted Effect**: ""companies are realizing the potential for increased efficiency""
+
+The ground truth effect mentions ""optimized operational efficiency,"" implying that the use of digital twins leads to the best possible operational efficiency. The predicted effect states that companies are realizing the potential for ""increased efficiency."" While ""increased efficiency"" is not exactly the same as ""optimized operational efficiency,"" both convey the idea that efficiency improves. ""Optimized"" suggests a more specific"
+row76,0.0,0.0,0.0,data security becomes a higher priority,mobile devices are adopting stronger encryption methods to safeguard user information,Enhanced encryption standards for mobile devices,Strengthened personal data protection,"To evaluate the predicted cause-effect pair against the ground truth pair, let's analyze both the cause and the effect separately.
+
+1. **Cause Analysis**:
+   - Ground Truth Cause: ""Enhanced encryption standards for mobile devices""
+   - Predicted Cause: ""data security becomes a higher priority""
+
+The ground truth cause focuses on a specific action (enhanced encryption standards) taken for mobile devices. The predicted cause, while related, is more about the motivation or reason behind such actions (data security becoming a higher priority). Although they are related, they capture different aspects of the situation. The predicted cause is about the reason or the driving force, whereas the ground truth cause is about the specific action taken. Thus, they are not semantically identical but share a related core concept. This suggests a partial match.
+
+2. **Effect Analysis**:
+   - Ground Truth Effect: ""Strengthened personal data protection""
+   - Predicted Effect: ""mobile devices are adopting stronger encryption methods to safeguard user information""
+
+The ground truth effect is about the outcome of certain actions, which is the strengthening of personal data protection. The predicted effect describes a specific action being taken (adopting stronger encryption methods) and its purpose (to safeguard user information), which implies an outcome similar to the ground truth effect (strengthened personal"

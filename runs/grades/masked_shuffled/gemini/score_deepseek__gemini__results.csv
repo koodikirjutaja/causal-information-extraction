@@ -1,0 +1,148 @@
+id,cause_score,effect_score,avg_score,pred_cause,pred_effect,orig_cause,orig_effect,judge_response
+row0,0.0,0.0,0.0,a variety of factors,the scenario,Rise in housing market speculation,Increased risk of property price bubbles,"{""cause_score"": 0, ""effect_score"": 0}"
+row1,0.5,0.0,0.25,pandemics,the Supply chain disruptions,Supply chain disruptions due to pandemics,Inflationary pressures on consumer goods,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0}"
+row2,0.0,0.0,0.0,Historical data,ambiguous insights into the Rise in ESG investing standards,Rise in ESG investing standards,Growth in sustainable investment funds,"<think>
+{""cause_score"": 0, ""effect_score"": 0}"
+row3,0.5,1.0,0.75,Escalation of geopolitical tensions and the broader economic environment,Increased prices of commodities such as oil,Escalation of geopolitical tensions,Increased prices of commodities such as oil,"<think>
+{""cause_score"": 0.5, ""effect_score"": 1}"
+row4,1.0,1.0,1.0,Tightening regulations on cryptocurrency exchanges,Reduced market liquidity,Tightening regulations on cryptocurrency exchanges,Reduced market liquidity,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row5,0.0,0.0,0.0,reduced corporate real estate expenditures occurred alongside other factors,creating a complex scenario,Implementation of remote work policies,Reduced corporate real estate expenditures,"<think>
+{""cause_score"": 0, ""effect_score"": 0}"
+row6,1.0,1.0,1.0,enhanced data privacy legislation emerged,the increase in compliance costs for businesses,Enhanced data privacy legislation,Increased compliance costs for businesses,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row7,0.0,0.0,0.0,,,Adoption of central bank digital currencies (CBDCs),Decline in traditional cash usage,"<think>
+{""cause_score"": 0, ""effect_score"": 0}"
+row8,0.5,0.0,0.25,Increased international trade tariffs emerged,Increased prices of commodities such while oil seemed to follow,Increased international trade tariffs,Reduction in import-dependent industries' profitability,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0}"
+row9,0.5,1.0,0.75,Many complex variables,decreased consumer purchasing power,Rising inflation rates,Decrease in consumer purchasing power,"<think>
+{""cause_score"": 0.5, ""effect_score"": 1}"
+row10,1.0,0.0,0.5,Reduction in government subsidies for renewable energy,expressed mixed opinions,Reduction in government subsidies for renewable energy,Decreased private investment in solar power projects,"<think>
+{""cause_score"": 1, ""effect_score"": 0}"
+row11,0.5,1.0,0.75,fintech grew,improved access to credit for small businesses was observed,Growth of fintech lending platforms,Improved access to credit for small businesses,"<think>
+{""cause_score"": 0.5, ""effect_score"": 1}"
+row12,0.5,0.5,0.5,a number of complex and simultaneous events,the overall economic situation was shaped,Sudden bankruptcy of major banks,Decline in investor confidence,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
+row13,0.0,0.0,0.0,,,Increased automation in financial auditing,Reduction in accounting errors,"<think>
+{""cause_score"": 0, ""effect_score"": 0}"
+row14,0.5,1.0,0.75,a broader conversation about policy and economic factors,Increased household savings rates,Expansion of financial literacy education,Increased household savings rates,"<think>
+{""cause_score"": 0.5, ""effect_score"": 1}"
+row15,0.5,1.0,0.75,technology and changing consumer behavior,physical bank branches saw a marked decline,Surge in remote banking services,Decline in physical bank branch numbers,"<think>
+{""cause_score"": 0.5, ""effect_score"": 1}"
+row16,1.0,1.0,1.0,implementation of carbon taxes occurred,increased operational costs for heavy industries,Implementation of carbon taxes,Increased operational costs for heavy industries,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row17,0.5,1.0,0.75,the technology,increased accuracy in loan approvals,Adoption of AI-driven credit scoring,Increased accuracy in loan approvals,"<think>
+{""cause_score"": 0.5, ""effect_score"": 1}"
+row18,0.0,1.0,0.5,Many factors,Increased volatility in financial markets,Introduction of algorithmic trading strategies,Increased volatility in financial markets,"<think>
+{""cause_score"": 0, ""effect_score"": 1}"
+row19,0.5,1.0,0.75,the use of blockchain,improved transparency in transactions,Expanded use of blockchain in supply chain finance,Improved transparency in transactions,"<think>
+{""cause_score"": 0.5, ""effect_score"": 1}"
+row20,1.0,1.0,1.0,Central bank raises interest rates,Consumer borrowing decreases,Central bank raises interest rates,Consumer borrowing decreases,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row21,0.5,0.5,0.5,sanctions,the reduction of foreign direct investment,Reduction of foreign direct investment due to economic sanctions,Slowed economic growth,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
+row22,0.0,0.0,0.0,market competition decreased,The rise in corporate mergers and acquisitions,Increased corporate mergers and acquisitions,Reduction in market competition,"<think>
+{""cause_score"": 0.0, ""effect_score"": 0.0}"
+row23,0.5,1.0,0.75,banks adjusted to the strengthened regulations,increased administrative overhead appeared,Strengthened anti-money laundering policies,Increased administrative overhead for banks,"<think>
+{""cause_score"": 0.5, ""effect_score"": 1}"
+row24,1.0,1.0,1.0,the shift toward digital payment systems accelerated,Physical currency circulation naturally declined,Shift towards digital payment systems,Reduced circulation of physical currency,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row25,1.0,1.0,1.0,Expansion of offshore wind farms in the region,Increased renewable energy production,Expansion of offshore wind farms,Increased renewable energy production,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row26,1.0,1.0,1.0,rapid Increased desalination plant operations,Increased brine discharge impacting marine ecosystems,Increased desalination plant operations,Increased brine discharge impacting marine ecosystems,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row27,1.0,1.0,1.0,Adoption of electric vehicles,Reduction in urban air pollution,Adoption of electric vehicles,Reduction in urban air pollution,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row28,1.0,1.0,1.0,Adoption of stringent emissions regulations,Reduction in industrial pollution,Adoption of stringent emissions regulations,Reduction in industrial pollution,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row29,1.0,1.0,1.0,Expansion of protected marine reserves,Recovery of fish populations,Expansion of protected marine reserves,Recovery of fish populations,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row30,0.5,1.0,0.75,elevated currents of Extensive fertilizer runoff,A Increased eutrophication in aquatic ecosystems,Extensive fertilizer runoff,Increased eutrophication in aquatic ecosystems,"<think>
+{""cause_score"": 0.5, ""effect_score"": 1}"
+row31,1.0,1.0,1.0,Implementation of urban tree planting programs,Mitigation of urban air pollution,Implementation of urban tree planting programs,Mitigation of urban air pollution,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row32,1.0,1.0,1.0,Melting permafrost,Increased methane release,Melting permafrost in polar regions,Increased methane release,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row33,1.0,1.0,1.0,Intensified hurricane activity,Increased coastal infrastructure damage,Intensified hurricane activity,Increased coastal infrastructure damage,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row34,1.0,1.0,1.0,Rapid glacial retreat in mountainous regions,Reduced freshwater availability in areas,Rapid glacial retreat in mountainous regions,Reduced freshwater availability,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row35,1.0,1.0,1.0,Rapid ocean acidification,Decreased coral reef resilience,Rapid ocean acidification,Decreased coral reef resilience,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row36,0.5,0.0,0.25,intensive agriculture,Severe soil erosion,Severe soil erosion due to intensive agriculture,Reduced land productivity,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.0"
+row37,1.0,1.0,1.0,Increased microplastic pollution,Decline in marine life populations,Increased microplastic pollution,Decline in marine life populations,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row38,1.0,0.5,0.75,global trade,Increased prevalence of invasive species,Increased prevalence of invasive species due to global trade,Loss of native species,"<think>
+{""cause_score"": 1, ""effect_score"": 0.5}"
+row39,1.0,1.0,1.0,Implementation of plastic bag bans,Reduction in plastic waste,Implementation of plastic bag bans,Reduction in plastic waste,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row40,1.0,1.0,1.0,Increased frequency of forest fires,Reduction in biodiversity,Increased frequency of forest fires,Reduction in biodiversity,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row41,0.0,1.0,0.5,increased urban heat islands amid construction,Acceleration of global sea-level rise,Rapid melting of Antarctic ice shelves,Acceleration of global sea-level rise,"<think>
+{""cause_score"": 0, ""effect_score"": 1}"
+row42,1.0,1.0,1.0,development of large-scale solar farms,habitat disruption for wildlife,Development of large-scale solar farms,Habitat disruption for wildlife,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row43,0.0,0.0,0.0,intensive agriculture,severe soil erosion,Rising global average temperatures,Increased frequency of heatwaves,"<think>
+{""cause_score"": 0, ""effect_score"": 0}"
+row44,0.0,0.0,0.0,Adoption of regenerative agriculture practices,Increased soil carbon sequestration,Adoption of regenerative agriculture practices,Increased soil carbon sequestration,"{""cause_score"": 0, ""effect_score"": 0}"
+row45,1.0,1.0,1.0,Expansion of urban areas,Loss of wetlands,Expansion of urban areas,Loss of wetlands,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row46,0.0,0.0,0.0,Reduced urban greenhouse gas emissions,Biodiversity indices reflected,Enhanced public transportation infrastructure,Reduced urban greenhouse gas emissions,"<think>
+{""cause_score"": 0, ""effect_score"": 0}"
+row47,1.0,1.0,1.0,Extensive deforestation in tropical regions,Reduction in regional rainfall,Extensive deforestation in tropical regions,Reduction in regional rainfall,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row48,1.0,1.0,1.0,Widespread drought conditions,Reduced agricultural productivity,Widespread drought conditions,Reduced agricultural productivity,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row49,1.0,0.0,0.5,Increased urban heat islands due to construction,acceleration of global sea‑level rise,Increased urban heat islands due to construction,Elevated energy consumption for cooling,"<think>
+{""cause_score"": 1, ""effect_score"": 0}"
+row50,0.5,0.5,0.5,The field of quantum computing is evolving rapidly,new algorithms being tested for diverse applications,Increased adoption of quantum computing algorithms,Enhanced computational speeds for cryptographic analysis,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
+row51,1.0,0.5,0.75,the rise of machine learning models that can detect diseases with increasing accuracy,Healthcare diagnostics are benefiting,Increased use of machine learning in healthcare diagnostics,Improved accuracy in disease detection,"<think>
+{""cause_score"": 1, ""effect_score"": 0.5}"
+row52,0.5,0.5,0.5,more devices are interconnected,the risk of vulnerabilities in security frameworks continues to be a significant concern for cybersecurity professionals,Widespread adoption of IoT devices,Increased vulnerability to cyberattacks,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
+row53,0.5,0.0,0.25,The shift towards remote work,a surge in the use of various collaboration technologies,Growth in remote work technology adoption,Increased demand for cybersecurity solutions,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0}"
+row54,0.0,0.5,0.25,reducing latency,the pattern in this technology on industries that require minimal communication delays is becoming increasingly evident,Development of 5G infrastructure,Reduced latency in wireless communication,"<think>
+{""cause_score"": 0, ""effect_score"": 0.5}"
+row55,1.0,1.0,1.0,facial recognition technology finds broader application in sectors ranging from security to retail,privacy concerns are also escalating,Increased application of facial recognition technologies,Heightened privacy concerns,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row56,0.5,0.5,0.5,processing information closer to the source,companies aim to reduce latency,Implementation of edge computing,Reduced data transmission latency,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
+row57,1.0,0.5,0.75,Autonomous vehicle technology,reducing human error in driving,Rise in autonomous vehicle technology adoption,Reduction in traffic accidents,"<think>
+{""cause_score"": 1, ""effect_score"": 0.5}"
+row58,0.5,0.5,0.5,AR becomes more integrated into customer interactions,its potential to coincides with deeper engagement is a growing topic of interest for marketers and technologists alike,Expanded use of augmented reality in retail,Enhanced customer engagement,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
+row59,1.0,0.5,0.75,Generative AI tools are gaining ground in content creation,enabling faster production of diverse types of media,Adoption of generative AI models,Increased productivity in content creation,"<think>
+{""cause_score"": 1, ""effect_score"": 0.5}"
+row60,1.0,1.0,1.0,Blockchain technology is being increasingly applied to enhance transparency in supply chains,better tracking of goods,Increased use of blockchain in supply chain management,Improved tracking of goods,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row61,0.5,1.0,0.75,mimics the brain’s processes,improve AI efficiency,Development of neuromorphic computing chips,Increased efficiency in artificial intelligence processing,"<think>
+{""cause_score"": 0.5, ""effect_score"": 1}"
+row62,0.0,0.0,0.0,logistical and cost challenges,hamper widespread adoption,Expansion of satellite-based internet services,Improved connectivity in rural areas,"<think>
+{""cause_score"": 0, ""effect_score"": 0}"
+row63,1.0,0.0,0.5,Biometric authentication systems are being implemented across various sectors,concerns about data privacy and the long-term implications of biometric data usage are emerging,Widespread deployment of biometric authentication,Increased user account security,"<think>
+{""cause_score"": 1, ""effect_score"": 0}"
+row64,1.0,0.5,0.75,the advancement of predictive analytics tools,businesses are better equipped to anticipate market shifts and disruptions in the supply chain,Enhanced predictive analytics capabilities,Improved supply chain resilience,"<think>
+{""cause_score"": 1, ""effect_score"": 0.5}"
+row65,1.0,1.0,1.0,The widespread adoption of cloud storage solutions,has opened up new possibilities for businesses seeking to scale efficiently,Implementation of cloud-based data storage,Increased scalability for businesses,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row66,1.0,1.0,1.0,Regulatory pressures on social media platforms,calls for more transparent content moderation practices,Increased regulatory scrutiny on social media algorithms,Enhanced transparency in content moderation,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row67,0.5,0.5,0.5,allowing more flexible control over configurations,Software-defined networking (SDN) is transforming network management,Adoption of software-defined networking (SDN),Increased flexibility in network management,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
+row68,0.0,0.0,0.0,the demand for cloud services and digital infrastructure grows,does the energy consumption of data centers,Expansion of data center infrastructure,Increased energy consumption,"{""cause_score"": 0, ""effect_score"": 0}"
+row69,1.0,1.0,1.0,The rise of autonomous delivery drones,to reduce reliance on human-operated vehicles,Adoption of autonomous drones for deliveries,Reduction in human-operated vehicle use,"<think>
+{""cause_score"": 1, ""effect_score"": 1}"
+row70,0.5,0.5,0.5,Telemedicine is offering new ways,"to provide healthcare services, particularly to remote and underserved populations",Increased reliance on telemedicine,Improved access to healthcare services,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
+row71,1.0,0.5,0.75,The growth of open-source software,driving innovation,Widespread use of open-source software,Accelerated innovation in technology communities,"<think>
+{""cause_score"": 1, ""effect_score"": 0.5}"
+row72,0.5,0.5,0.5,Graphics processing units (GPUs) have become integral to artificial intelligence training,more efficient computation,Enhanced GPU computational capabilities,Improved performance in AI training tasks,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
+row73,0.5,0.5,0.5,their adoption grows,companies are realizing the potential for increased efficiency,Increased application of digital twins in manufacturing,Optimized operational efficiency,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
+row74,0.5,0.5,0.5,data security becomes a higher priority,mobile devices are adopting stronger encryption methods to safeguard user information,Enhanced encryption standards for mobile devices,Strengthened personal data protection,"<think>
+{""cause_score"": 0.5, ""effect_score"": 0.5}"
