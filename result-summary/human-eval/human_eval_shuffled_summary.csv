@@ -1,0 +1,9 @@
+Model,Avg Cause Score,Avg Effect Score,Avg Total Score,Count Cause,Count Effect
+o3,0.853,0.807,0.83,75,75
+grok3,0.8,0.82,0.81,75,75
+claude,0.787,0.82,0.803,75,75
+deepseek,0.793,0.733,0.763,75,75
+gemini,0.693,0.767,0.73,75,75
+qwen3,0.74,0.653,0.697,75,75
+llama4,0.68,0.707,0.693,75,75
+mistral,0.703,0.662,0.682,74,74
