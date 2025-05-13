@@ -1,0 +1,76 @@
+id,pred_cause,ground_cause,cause_score,pred_effect,ground_effect,effect_score
+row0,rise in housing market speculation,Rise in housing market speculation,1,increased risk of property price bubbles,Increased risk of property price bubbles,1
+row1,Supply chain disruptions due to pandemics,Supply chain disruptions due to pandemics,1,Inflationary pressures on consumer goods,Inflationary pressures on consumer goods,1
+row2,Rise in ESG investing standards,Rise in ESG investing standards,1,Growth in sustainable investment funds,Growth in sustainable investment funds,1
+row3,Escalation of geopolitical tensions,Escalation of geopolitical tensions,1,Increased prices of commodities such as oil,Increased prices of commodities such as oil,1
+row4,Tightening regulations on cryptocurrency exchanges,Tightening regulations on cryptocurrency exchanges,1,Reduced market liquidity,Reduced market liquidity,1
+row5,remote work policies were widely adopted,Implementation of remote work policies,1,reduced corporate real estate expenditures occurred,Reduced corporate real estate expenditures,1
+row6,enhanced data privacy legislation emerged,Enhanced data privacy legislation,1,increase in compliance costs for businesses,Increased compliance costs for businesses,1
+row7,adoption of central bank digital currencies (CBDCs),Adoption of central bank digital currencies (CBDCs),1,cash usage notably declined,Decline in traditional cash usage,1
+row8,Increased international trade tariffs,Increased international trade tariffs,1,increased prices of commodities such as oil,Reduction in import-dependent industries' profitability,0
+row9,rising inflation rates,Rising inflation rates,1,decreased consumer purchasing power,Decrease in consumer purchasing power,1
+row10,Reduction in government subsidies for renewable energy,Reduction in government subsidies for renewable energy,1,Decreased private investment in solar power projects,Decreased private investment in solar power projects,1
+row11,growth of fintech lending platforms,Growth of fintech lending platforms,1,improved access to credit for small businesses,Improved access to credit for small businesses,1
+row12,,Sudden bankruptcy of major banks,0,,Decline in investor confidence,0
+row13,,Increased automation in financial auditing,0,,Reduction in accounting errors,0
+row14,Expansion of financial literacy education,Expansion of financial literacy education,1,Increased household savings rates,Increased household savings rates,1
+row15,the ongoing rise in remote banking services,Surge in remote banking services,1,physical bank branches saw a marked decline,Decline in physical bank branch numbers,1
+row16,implementation of carbon taxes,Implementation of carbon taxes,1,increased operational costs for heavy industries,Increased operational costs for heavy industries,1
+row17,AI-driven credit scoring technology,Adoption of AI-driven credit scoring,1,increased accuracy in loan approvals,Increased accuracy in loan approvals,1
+row18,supply chain disruptions amid pandemics,Introduction of algorithmic trading strategies,0,increased volatility in financial markets,Increased volatility in financial markets,1
+row19,use of blockchain,Expanded use of blockchain in supply chain finance,0.5,improved transparency in transactions,Improved transparency in transactions,1
+row20,Central bank raises interest rates,Central bank raises interest rates,1,Consumer borrowing decreases,Consumer borrowing decreases,1
+row21,sanctions,Reduction of foreign direct investment due to economic sanctions,0.5,reduction of foreign direct investment,Slowed economic growth,0.5
+row22,broader industry changes,Increased corporate mergers and acquisitions,0.5,rise in corporate mergers and acquisitions,Reduction in market competition,0.5
+row23,growing complexity in anti-money laundering policies,Strengthened anti-money laundering policies,1,increased administrative overhead,Increased administrative overhead for banks,1
+row24,the shift toward digital payment systems accelerated,Shift towards digital payment systems,1,physical currency circulation naturally declined,Reduced circulation of physical currency,1
+row25,Expansion of offshore wind farms in the region,Expansion of offshore wind farms,1,Increased renewable energy production,Increased renewable energy production,1
+row26,rapid Increased desalination plant operations,Increased desalination plant operations,1,Increased brine discharge impacting marine ecosystems,Increased brine discharge impacting marine ecosystems,1
+row27,Adoption of electric vehicles,Adoption of electric vehicles,1,Reduction in urban air pollution,Reduction in urban air pollution,1
+row28,Adoption of stringent emissions regulations,Adoption of stringent emissions regulations,1,Reduction in industrial pollution,Reduction in industrial pollution,1
+row29,Expansion of protected marine reserves,Expansion of protected marine reserves,1,Recovery of fish populations,Recovery of fish populations,1
+row30,Extensive fertilizer runoff,Extensive fertilizer runoff,1,Increased eutrophication in aquatic ecosystems,Increased eutrophication in aquatic ecosystems,1
+row31,Implementation of urban tree planting programs,Implementation of urban tree planting programs,1,Mitigation of urban air pollution tended to surface in those provinces,Mitigation of urban air pollution,1
+row32,Melting permafrost in polar regions,Melting permafrost in polar regions,1,Increased methane release,Increased methane release,1
+row33,Intensified hurricane activity,Intensified hurricane activity,1,Increased coastal infrastructure damage,Increased coastal infrastructure damage,1
+row34,Rapid glacial retreat in mountainous regions,Rapid glacial retreat in mountainous regions,1,Reduced freshwater availability,Reduced freshwater availability,1
+row35,large-scale Rapid ocean acidification,Rapid ocean acidification,1,Decreased coral reef resilience,Decreased coral reef resilience,1
+row36,Severe soil erosion due to intensive agriculture,Severe soil erosion due to intensive agriculture,1,Reduced land productivity,Reduced land productivity,1
+row37,Increased microplastic pollution,Increased microplastic pollution,1,Decline in marine life populations,Decline in marine life populations,1
+row38,Increased prevalence of invasive species due to global trade,Increased prevalence of invasive species due to global trade,1,Loss of native species along corridors,Loss of native species,1
+row39,Implementation of plastic bag bans,Implementation of plastic bag bans,1,Reduction in plastic waste,Reduction in plastic waste,1
+row40,Increased frequency of forest fires,Increased frequency of forest fires,1,Reduction in biodiversity during fiscal quarters,Reduction in biodiversity,1
+row41,increased urban heat islands amid construction,Rapid melting of Antarctic ice shelves,0,acceleration of global sea-level rise across neighborhoods,Acceleration of global sea-level rise,1
+row42,development of large-scale solar farms,Development of large-scale solar farms,1,habitat disruption for wildlife,Habitat disruption for wildlife,1
+row43,intensive agriculture,Rising global average temperatures,0,severe soil erosion,Increased frequency of heatwaves,0
+row44,Adoption of regenerative agriculture practices,Adoption of regenerative agriculture practices,1,Increased soil carbon sequestration,Increased soil carbon sequestration,1
+row45,Expansion of urban areas,Expansion of urban areas,1,Loss of wetlands,Loss of wetlands,1
+row46,Reduced urban greenhouse gas emissions,Enhanced public transportation infrastructure,0,Biodiversity indices reflected reduced urban greenhouse gas emissions,Reduced urban greenhouse gas emissions,1
+row47,Extensive deforestation in tropical regions,Extensive deforestation in tropical regions,1,Reduction in regional rainfall,Reduction in regional rainfall,1
+row48,Widespread drought conditions,Widespread drought conditions,1,Reduced agricultural productivity,Reduced agricultural productivity,1
+row49,Increased urban heat islands due to construction,Increased urban heat islands due to construction,1,acceleration of global sea-level rise,Elevated energy consumption for cooling,0
+row50,The field of quantum computing is evolving rapidly,Increased adoption of quantum computing algorithms,0.5,new algorithms are being tested for diverse applications,Enhanced computational speeds for cryptographic analysis,0
+row51,the rise of machine learning models that can detect diseases with increasing accuracy,Increased use of machine learning in healthcare diagnostics,1,Healthcare diagnostics are benefiting,Improved accuracy in disease detection,0.5
+row52,More devices are interconnected through the adoption of IoT,Widespread adoption of IoT devices,1,the risk of vulnerabilities in security frameworks remains a significant concern for cybersecurity professionals,Increased vulnerability to cyberattacks,1
+row53,The shift towards remote work,Growth in remote work technology adoption,0.5,a surge in the use of various collaboration technologies,Increased demand for cybersecurity solutions,0.5
+row54,5G infrastructure promises faster wireless speeds and more reliable connections with reduced latency,Development of 5G infrastructure,1,new use cases emerge,Reduced latency in wireless communication,0
+row55,The broader application of facial recognition technology,Increased application of facial recognition technologies,1,privacy concerns are escalating,Heightened privacy concerns,1
+row56,processing information closer to the source,Implementation of edge computing,0.5,reduce latency,Reduced data transmission latency,1
+row57,Autonomous vehicle technology reducing human error in driving,Rise in autonomous vehicle technology adoption,0,potentially lowering traffic accidents,Reduction in traffic accidents,1
+row58,Retailers are increasingly turning to augmented reality (AR),Expanded use of augmented reality in retail,1,customers receive more immersive shopping experiences,Enhanced customer engagement,1
+row59,Generative AI tools gaining ground in content creation,Adoption of generative AI models,1,faster production of diverse types of media,Increased productivity in content creation,1
+row60,Blockchain technology is being increasingly applied to supply chains,Increased use of blockchain in supply chain management,1,allows for better tracking of goods,Improved tracking of goods,1
+row61,Neuromorphic computing mimics the brain’s processes,Development of neuromorphic computing chips,0,AI efficiency is improved,Increased efficiency in artificial intelligence processing,1
+row62,traditional broadband infrastructure is limited,Expansion of satellite-based internet services,0,satellite-based internet services are connecting remote rural areas,Improved connectivity in rural areas,1
+row63,Biometric authentication systems are being implemented across various sectors,Widespread deployment of biometric authentication,1,increase security and streamline user experiences,Increased user account security,1
+row64,advancement of predictive analytics tools,Enhanced predictive analytics capabilities,1,businesses are better equipped to anticipate market shifts and disruptions in the supply chain,Improved supply chain resilience,1
+row65,The widespread adoption of cloud storage solutions,Implementation of cloud-based data storage,1,opened up new possibilities for businesses seeking to scale efficiently,Increased scalability for businesses,1
+row66,Regulatory pressures on social media platforms,Increased regulatory scrutiny on social media algorithms,1,calls for more transparent content moderation practices,Enhanced transparency in content moderation,1
+row67,allowing more flexible control over configurations,Adoption of software-defined networking (SDN),0,Software-defined networking is transforming network management,Increased flexibility in network management,0.5
+row68,the demand for cloud services and digital infrastructure grows,Expansion of data center infrastructure,0,the energy consumption of data centers increases,Increased energy consumption,1
+row69,the logistical and regulatory challenges associated with large-scale drone operations,Adoption of autonomous drones for deliveries,0,raise questions about the widespread adoption of autonomous delivery drones,Reduction in human-operated vehicle use,0
+row70,Telemedicine is offering new ways to provide healthcare services,Increased reliance on telemedicine,1,healthcare becomes more accessible to remote and underserved populations,Improved access to healthcare services,1
+row71,The growth of open-source software,Widespread use of open-source software,1,driving innovation,Accelerated innovation in technology communities,0.5
+row72,Graphics processing units (GPUs) have become integral to artificial intelligence training,Enhanced GPU computational capabilities,1,enabling more efficient computation,Improved performance in AI training tasks,0.5
+row73,the adoption of digital twins grows,Increased application of digital twins in manufacturing,1,companies realize the potential for increased efficiency,Optimized operational efficiency,1
+row74,data security becomes a higher priority,Enhanced encryption standards for mobile devices,0,mobile devices are adopting stronger encryption methods to safeguard user information,Strengthened personal data protection,0
