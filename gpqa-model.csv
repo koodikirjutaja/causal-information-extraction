@@ -1,0 +1,9 @@
+model, gpqa
+o3, 0.833
+claude, 0.848
+gemini, 0.84
+llama4, 0.698
+qwen3, 0.658
+mistral, 0.453
+deepseek, 0.715
+grok3, 0.846
