@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Extract cause-effect relationships from text using multiple models:
 - Together.ai models (DeepSeek, Llama4, Mistral)
@@ -51,15 +50,15 @@ TOGETHER_MODELS = {
 }
 
 OPENROUTER_MODELS = {
-    "qwen3": "qwen/qwen3-30b-a3b"  # Paid version
+    "qwen3": "qwen/qwen3-30b-a3b"
 }
 
 GEMINI_MODELS = {
-    "gemini": "gemini-2.5-pro-preview-05-06"  # The specific preview model
+    "gemini": "gemini-2.5-pro-preview-05-06"
 }
 
 ANTHROPIC_MODELS = {
-    "claude": "claude-3-7-sonnet-20250219"  # Claude 3.7 Sonnet
+    "claude": "claude-3-7-sonnet-20250219"
 }
 
 OPENAI_MODELS = {
@@ -67,7 +66,7 @@ OPENAI_MODELS = {
 }
 
 GROK_MODELS = {
-    "grok3": "grok-3-latest",           # Base model
+    "grok3": "grok-3-latest",
 }
 
 # Create prompt using concatenation (no string formatting)
@@ -83,7 +82,6 @@ def create_prompt(context):
 
 def call_together(context, model_key, api_key=None):
     """Call Together.ai API with the specified model"""
-    # Use API key from parameter or environment
     if not api_key:
         api_key = os.getenv("TOGETHER_API_KEY")
     
@@ -96,7 +94,6 @@ def call_together(context, model_key, api_key=None):
     
     print(f"Using Together model: {model_id}")
     
-    # Very simple system prompt
     system_prompt = "Return ONLY a JSON object with cause and effect fields."
     
     # Create payload
@@ -118,7 +115,7 @@ def call_together(context, model_key, api_key=None):
     
     # Simple rate limiting
     try:
-        time.sleep(1.5)  # Wait 1.5 seconds between calls to avoid rate limits
+        time.sleep(1.5)
         
         response = requests.post(
             "https://api.together.xyz/v1/chat/completions",
@@ -143,8 +140,7 @@ def call_together(context, model_key, api_key=None):
         return "{}"
 
 def call_openrouter_openai(context, model_key, api_key=None):
-    """Call OpenRouter API using the OpenAI client - for the paid model"""
-    # Use API key from parameter or environment
+    """Call OpenRouter API using the OpenAI client"""
     if not api_key:
         api_key = os.getenv("OPENROUTER_API_KEY")
     
@@ -209,7 +205,6 @@ def call_openrouter_openai(context, model_key, api_key=None):
 
 def call_openrouter_direct(context, model_key, api_key=None):
     """Call OpenRouter API using direct requests approach - backup method"""
-    # Use API key from parameter or environment
     if not api_key:
         api_key = os.getenv("OPENROUTER_API_KEY")
     
@@ -351,7 +346,6 @@ def call_anthropic_claude(context, model_key, api_key=None):
     print(f"Using Anthropic Claude model: {model_id}")
     print(f"Prompt length: {len(prompt)} characters")
     
-    # Use API key from parameter or environment
     if not api_key:
         api_key = os.getenv("ANTHROPIC_API_KEY")
     
@@ -401,7 +395,6 @@ def call_anthropic_claude(context, model_key, api_key=None):
 
 def call_openai_simple(context, model_key, api_key=None):
     """Call OpenAI API with a simpler approach matching the o3_call.py example"""
-    # Use API key from parameter or environment
     if not api_key:
         api_key = os.getenv("OPENAI_API_KEY")
     
@@ -1030,7 +1023,7 @@ def main():
                 if model in OPENAI_MODELS:
                     api_key = os.getenv("OPENAI_API_KEY")
                     batch_results = call_openai_batch_simple(batch_contexts, model, batch_row_ids, api_key)
-                elif model in GROK_MODELS:
+                elif model in GROK_MODELS: # This will not work
                     api_key = os.getenv("XAI_API_KEY")
                     use_reasoning = args.grok_reasoning and model in ["grok3-mini-beta", "grok3-mini-fast-beta"]
                     batch_results = call_grok_batch(batch_contexts, model, batch_row_ids, api_key, use_reasoning)
@@ -1267,40 +1260,6 @@ def test_anthropic_claude():
         print("3. Rate limiting or insufficient credits")
         print("Check Anthropic dashboard for more details")
 
-# Test function to verify the OpenAI Batch API
-def test_openai_batch():
-    """Test the OpenAI Batch API"""
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        print("ERROR: OPENAI_API_KEY environment variable not set")
-        print("Set with: export OPENAI_API_KEY=your-api-key")
-        return
-    
-    print("Using OpenAI API key from environment")
-    
-    # Test contexts
-    contexts = [
-        "The expansion of financial literacy education has led to increased household savings rates.",
-        "The implementation of carbon taxes resulted in increased operational costs for heavy industries."
-    ]
-    row_ids = ["test1", "test2"]
-    
-    try:
-        # Test batch processing
-        print("Testing batch processing with OpenAI...")
-        batch_results = call_openai_batch_simple(contexts, "o3", row_ids, api_key)
-        
-        print("\nBatch results:")
-        for row_id, result in batch_results.items():
-            print(f"\nRow ID: {row_id}")
-            print(f"Raw response: {result}")
-            extracted = extract_json(result)
-            print(f"Extracted: {extracted}")
-        
-    except Exception as e:
-        print(f"Error testing OpenAI Batch API: {e}")
-        import traceback
-        traceback.print_exc()
 
 # Test function to verify the Grok API
 def test_grok():

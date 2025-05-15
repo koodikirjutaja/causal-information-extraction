@@ -70,7 +70,7 @@ except ImportError:
     print("Install with: pip install google-cloud-aiplatform")
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Improved prompt for more consistent JSON outputs
+# Prompt for more consistent JSON outputs (LLMs might not follow strictly)
 # ─────────────────────────────────────────────────────────────────────────────
 PROMPT = """Task: Evaluate how well the predicted cause-effect pair matches the ground truth pair.
 
@@ -100,7 +100,7 @@ Your response MUST ONLY contain this JSON. No other text or explanation.
 """
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Model Definitions - Match the models in run_llms.py
+# Model Definitions
 # ─────────────────────────────────────────────────────────────────────────────
 # Together.ai models
 TOGETHER_MODELS = {
@@ -111,7 +111,7 @@ TOGETHER_MODELS = {
 
 # OpenRouter models
 OPENROUTER_MODELS = {
-    "qwen3": "qwen/qwen3-30b-a3b"  # Paid version
+    "qwen3": "qwen/qwen3-30b-a3b"
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -236,7 +236,7 @@ def judge_grok(prompt: str) -> str:
             model="grok-3-latest",
             messages=[{"role": "user", "content": prompt}],
             temperature=0,
-            # Removed max_tokens limit
+            # No max_tokens limit
         )
         return resp.choices[0].message.content.strip()
     except Exception as e:
@@ -255,8 +255,6 @@ def judge_together(prompt: str, model_key: str) -> str:
     
     model_id = TOGETHER_MODELS[model_key]
     
-    # Removed system prompt for consistency with other models
-    
     # Create payload
     payload = {
         "model": model_id,
@@ -265,7 +263,7 @@ def judge_together(prompt: str, model_key: str) -> str:
             {"role": "user", "content": prompt}
         ],
         "temperature": 0,
-        # Removed max_tokens limit
+        # No max_tokens limit
         "response_format": {"type": "text"}
     }
     
@@ -276,7 +274,7 @@ def judge_together(prompt: str, model_key: str) -> str:
     
     # Simple rate limiting
     try:
-        time.sleep(1.5)  # Wait 1.5 seconds between calls to avoid rate limits
+        time.sleep(1.5)
         
         response = requests.post(
             "https://api.together.xyz/v1/chat/completions",
@@ -362,8 +360,6 @@ def judge_qwen3(prompt: str) -> str:
                 "HTTP-Referer": "https://github.com",  # Required by OpenRouter
                 "X-Title": "Causal Extraction Evaluation",  # Optional for rankings
             }
-            
-            # Create request payload - match other models by NOT using system message
             payload = {
                 "model": model_id,
                 "messages": [

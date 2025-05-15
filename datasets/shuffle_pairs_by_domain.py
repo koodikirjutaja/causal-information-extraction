@@ -79,19 +79,14 @@ def find_phrase_boundaries(text: str, phrase: str) -> tuple:
     # Find all occurrences of the normalized phrase
     matches = [(m.start(), m.end()) for m in re.finditer(r'\b' + re.escape(norm_phrase) + r'\b', norm_text)]
     
-    # If no exact word boundary match, try without boundary checks
     if not matches:
         matches = [(m.start(), m.end()) for m in re.finditer(re.escape(norm_phrase), norm_text)]
     
-    # If still no matches, return None
     if not matches:
         return None
     
-    # Take the first match
     start, end = matches[0]
     
-    # Now map these positions back to the original text
-    # This is complex because normalization can change string lengths
     
     # Build a mapping from normalized positions to original positions
     pos_map = []

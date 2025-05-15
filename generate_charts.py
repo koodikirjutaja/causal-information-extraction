@@ -35,6 +35,12 @@ def load_data():
     data['human_cross'] = pd.read_csv('result-summary/human-eval/human_eval_cross_dataset_comparison.csv')
     data['llm_cross'] = pd.read_csv('result-summary/llm-eval/llm_eval_cross_dataset_by_model.csv')
     
+    # Load judge cross-dataset comparison
+    try:
+        data['llm_cross_judge'] = pd.read_csv('result-summary/llm-eval/llm_eval_cross_dataset_by_model.csv')
+    except Exception as e:
+        print(f"Warning: Could not load judge cross-dataset data: {e}")
+    
     # Load human vs LLM comparison
     data['human_vs_llm'] = pd.read_csv('result-summary/human_vs_llm_comparison.csv')
     
@@ -267,6 +273,100 @@ def plot_human_llm_agreement(data):
     except Exception as e:
         print(f"Error creating judge agreement matrix: {e}")
 
+def plot_cause_vs_effect_across_datasets(data):
+    """
+    Create a bar chart comparing cause vs effect extraction performance
+    for each model averaged across ALL datasets (base, masked, shuffled, masked-shuffled).
+    """
+    # Ensure we have the cross-dataset data
+    if 'human_cross' not in data:
+        print("Error: Cross-dataset data not available for averaging across datasets")
+        return
+    
+    df = data['human_cross'].copy()
+    
+    # Remove the AVERAGE row if it exists
+    if 'AVERAGE' in df['Model'].values:
+        df = df[df['Model'] != 'AVERAGE']
+    
+    # Calculate averages across all four datasets for each model
+    dataset_prefixes = ['base', 'masked', 'shuffled', 'masked_shuffled']
+    alt_prefixes = ['base', 'masked', 'shuffled', 'masked-shuffled']
+    
+    # Create columns for storing averages
+    df['avg_cause'] = 0.0
+    df['avg_effect'] = 0.0
+    
+    # For each model, calculate average cause and effect scores across all datasets
+    for i, row in df.iterrows():
+        cause_scores = []
+        effect_scores = []
+        
+        # Try to get scores from each dataset variant
+        for prefix in dataset_prefixes:
+            cause_col = f'{prefix}_cause'
+            effect_col = f'{prefix}_effect'
+            
+            # If columns don't exist, try alternative naming
+            if cause_col not in df.columns or effect_col not in df.columns:
+                for alt_prefix in alt_prefixes:
+                    alt_cause_col = f'{alt_prefix}_cause'
+                    alt_effect_col = f'{alt_prefix}_effect'
+                    if alt_cause_col in df.columns and alt_effect_col in df.columns:
+                        cause_col = alt_cause_col
+                        effect_col = alt_effect_col
+                        break
+            
+            # Add to scores if columns exist
+            if cause_col in df.columns and effect_col in df.columns:
+                cause_scores.append(row[cause_col])
+                effect_scores.append(row[effect_col])
+        
+        # Calculate average if we found any scores
+        if cause_scores:
+            df.at[i, 'avg_cause'] = sum(cause_scores) / len(cause_scores)
+        if effect_scores:
+            df.at[i, 'avg_effect'] = sum(effect_scores) / len(effect_scores)
+    
+    # Sort by total average performance
+    df['avg_total'] = (df['avg_cause'] + df['avg_effect']) / 2
+    df = df.sort_values(by='avg_total', ascending=False).reset_index(drop=True)
+    
+    # Create the plot
+    plt.figure(figsize=(14, 8))
+    models = df['Model']
+    x = np.arange(len(models))
+    width = 0.35
+    
+    # Plot cause and effect scores side by side
+    plt.bar(x - width/2, df['avg_cause'], width, label='Cause Score')
+    plt.bar(x + width/2, df['avg_effect'], width, label='Effect Score')
+    
+    # Add horizontal lines showing average performance
+    cause_avg = df['avg_cause'].mean()
+    effect_avg = df['avg_effect'].mean()
+    plt.axhline(y=cause_avg, color='green', linestyle='--', alpha=0.5, label=f'Avg Cause: {cause_avg:.2f}')
+    plt.axhline(y=effect_avg, color='red', linestyle='--', alpha=0.5, label=f'Avg Effect: {effect_avg:.2f}')
+    
+    # Add labels and formatting
+    plt.xlabel('Models')
+    plt.ylabel('Average Score')
+    plt.title('Cause vs. Effect Extraction Performance by Model (Averaged Across All Datasets)', fontsize=16)
+    plt.xticks(x, models, rotation=45)
+    plt.ylim(0, 1.0)
+    plt.legend()
+    plt.tight_layout()
+    
+    # Add data labels on bars for better readability
+    for i, v in enumerate(df['avg_cause']):
+        plt.text(i - width/2, v + 0.02, f'{v:.2f}', ha='center')
+    for i, v in enumerate(df['avg_effect']):
+        plt.text(i + width/2, v + 0.02, f'{v:.2f}', ha='center')
+    
+    plt.savefig('charts/cause_vs_effect_across_datasets.svg', format='svg')
+    plt.close()
+    print("✓ Created Cause vs. Effect Comparison (Averaged Across All Datasets) chart")
+
 def plot_gpqa_correlation(data):
     """
     Create a scatter plot with regression line showing the correlation
@@ -452,9 +552,9 @@ def plot_f1_scores(data):
                 width = 0.25
                 
                 # Plot bars for each metric
-                bars1 = ax.bar(x - width, df['Precision'], width, label='Precision', color='#158CE0FF')
+                bars1 = ax.bar(x - width, df['Precision'], width, label='Precision', color='#1f77b4')
                 bars2 = ax.bar(x, df['Recall'], width, label='Recall', color='#ff7f0e')
-                bars3 = ax.bar(x + width, df['F1'], width, label='F1 Score', color='#29C829FF')
+                bars3 = ax.bar(x + width, df['F1'], width, label='F1 Score', color='#2ca02c')
                 
                 # Add data labels for all metrics
                 for j, v in enumerate(df['Precision']):
@@ -489,6 +589,180 @@ def plot_f1_scores(data):
     except Exception as e:
         print(f"Error creating F1 score charts: {e}")
 
+def plot_judge_cause_effect_comparison(data):
+    """
+    Create a visualization comparing cause vs effect extraction performance
+    across all datasets for each judge model.
+    """
+    # Load the cross-dataset by judge data if not already in data dictionary
+    if 'llm_cross_judge' not in data:
+        try:
+            judge_df = pd.read_csv('result-summary/llm-eval/llm_eval_cross_dataset_by_judge.csv')
+            data['llm_cross_judge'] = judge_df
+        except Exception as e:
+            print(f"Error loading judge cross-dataset data: {e}")
+            return
+    
+    judge_df = data['llm_cross_judge'].copy()
+    
+    # Remove the AVERAGE row if it exists
+    if 'AVERAGE' in judge_df['Judge'].values:
+        judge_df = judge_df[judge_df['Judge'] != 'AVERAGE']
+    
+    # Create multi-panel figure (2x2 for the 4 datasets)
+    fig, axes = plt.subplots(2, 2, figsize=(20, 16))
+    axes = axes.flatten()
+    
+    # Define dataset variants and their titles
+    dataset_variants = ['base', 'masked', 'shuffled', 'masked-shuffled']
+    titles = ['Base Dataset', 'Masked Dataset', 'Shuffled Dataset', 'Masked-Shuffled Dataset']
+    
+    # Process each dataset variant
+    for i, (variant, title) in enumerate(zip(dataset_variants, titles)):
+        ax = axes[i]
+        
+        # Get cause and effect columns for this variant
+        cause_col = f"{variant}_cause"
+        effect_col = f"{variant}_effect"
+        
+        # Ensure these columns exist in the dataframe
+        if cause_col not in judge_df.columns or effect_col not in judge_df.columns:
+            # Try alternative naming (with underscore instead of hyphen)
+            alt_variant = variant.replace('-', '_')
+            cause_col = f"{alt_variant}_cause"
+            effect_col = f"{alt_variant}_effect"
+            
+            if cause_col not in judge_df.columns or effect_col not in judge_df.columns:
+                print(f"Could not find data for {variant} dataset")
+                continue
+        
+        # Sort judges by average of cause and effect scores
+        judge_df['avg_score'] = (judge_df[cause_col] + judge_df[effect_col]) / 2
+        df_sorted = judge_df.sort_values(by='avg_score', ascending=False).reset_index(drop=True)
+        
+        # Plot the data
+        x = np.arange(len(df_sorted))
+        width = 0.35
+        
+        # Create bars
+        bars1 = ax.bar(x - width/2, df_sorted[cause_col], width, label='Cause Score')
+        bars2 = ax.bar(x + width/2, df_sorted[effect_col], width, label='Effect Score')
+        
+        # Add data labels on bars
+        for j, v in enumerate(df_sorted[cause_col]):
+            ax.text(j - width/2, v + 0.02, f'{v:.2f}', ha='center', fontsize=9)
+        for j, v in enumerate(df_sorted[effect_col]):
+            ax.text(j + width/2, v + 0.02, f'{v:.2f}', ha='center', fontsize=9)
+        
+        # Calculate and display average lines
+        cause_avg = df_sorted[cause_col].mean()
+        effect_avg = df_sorted[effect_col].mean()
+        ax.axhline(y=cause_avg, color='blue', linestyle='--', alpha=0.5, label=f'Avg Cause: {cause_avg:.2f}')
+        ax.axhline(y=effect_avg, color='orange', linestyle='--', alpha=0.5, label=f'Avg Effect: {effect_avg:.2f}')
+        
+        # Add title and labels
+        ax.set_title(title, fontsize=16)
+        ax.set_xlabel('Judge Models')
+        ax.set_ylabel('Score')
+        ax.set_ylim(0, 1.0)
+        ax.set_xticks(x)
+        ax.set_xticklabels(df_sorted['Judge'], rotation=45, ha='right')
+        ax.legend()
+    
+    # Add overall title
+    plt.suptitle('Cause vs. Effect Extraction Performance by Judge Models Across Datasets', fontsize=20)
+    
+    # Adjust layout
+    plt.tight_layout()
+    plt.subplots_adjust(top=0.93)
+    
+    # Save the figure
+    plt.savefig('charts/judge_cause_effect_comparison.svg', format='svg')
+    plt.close()
+    
+    # Create a tabular summary visualization
+    plot_judge_cause_effect_table(data)
+
+
+def plot_judge_cause_effect_table(data):
+    """
+    Create a tabular visualization showing the difference between cause and effect scores
+    for each judge across all dataset variants.
+    """
+    judge_df = data['llm_cross_judge'].copy()
+    
+    # Calculate differences between cause and effect for each dataset variant
+    variants = ['base', 'masked', 'shuffled', 'masked-shuffled']
+    alt_variants = ['base', 'masked', 'shuffled', 'masked_shuffled']
+    
+    # Create a new dataframe for the differences
+    diff_data = {'Judge': judge_df['Judge']}
+    
+    for variant, alt_variant in zip(variants, alt_variants):
+        cause_col = f"{variant}_cause"
+        effect_col = f"{variant}_effect"
+        
+        # Check if columns exist, if not try alternative naming
+        if cause_col not in judge_df.columns or effect_col not in judge_df.columns:
+            cause_col = f"{alt_variant}_cause"
+            effect_col = f"{alt_variant}_effect"
+        
+        # Calculate absolute difference and store
+        if cause_col in judge_df.columns and effect_col in judge_df.columns:
+            diff_data[variant] = (judge_df[effect_col] - judge_df[cause_col]).abs()
+    
+    diff_df = pd.DataFrame(diff_data)
+    
+    # Calculate average difference across all variants for sorting
+    diff_df['avg_diff'] = diff_df[[v for v in variants if v in diff_df.columns]].mean(axis=1)
+    diff_df = diff_df.sort_values(by='avg_diff', ascending=True)
+    
+    # Drop the average column after sorting
+    diff_df = diff_df.drop(columns=['avg_diff'])
+    
+    # Create the figure and table
+    fig, ax = plt.figure(figsize=(12, 8)), plt.subplot(111)
+    ax.axis('off')
+    ax.axis('tight')
+    
+    # Create table with cell coloring based on value
+    table = ax.table(
+        cellText=diff_df.drop(columns=['Judge']).applymap(lambda x: f'{x:.3f}').values,
+        rowLabels=diff_df['Judge'],
+        colLabels=[v.replace('-', '-\n') for v in variants if v in diff_df.columns],
+        loc='center',
+        cellLoc='center',
+        colColours=['#C9D7F0']*len([v for v in variants if v in diff_df.columns]),
+        rowColours=['#E3E3E3']*len(diff_df)
+    )
+    
+    # Adjust table appearance
+    table.auto_set_font_size(False)
+    table.set_fontsize(10)
+    table.scale(1.2, 1.5)
+    
+    # Color cells based on value (lighter color for smaller differences)
+    for i in range(len(diff_df)):
+        for j in range(len([v for v in variants if v in diff_df.columns])):
+            cell = table[i+1, j]  # +1 for header row
+            value = diff_df.iloc[i, j+1]  # +1 for Judge column
+            
+            # Color based on value (red intensity increases with larger differences)
+            # Lower values are better (less difference between cause and effect)
+            # Max expected difference is around 0.4, so scale accordingly
+            intensity = min(value / 0.4, 1.0)  # Scale to [0, 1]
+            cell.set_facecolor((1.0, 1.0 - intensity * 0.8, 1.0 - intensity * 0.8))
+    
+    plt.title('Cause vs. Effect Score Absolute Difference by Judge and Dataset', fontsize=16)
+    plt.figtext(0.5, 0.01, 'Lower values indicate more balanced cause-effect extraction', 
+                ha='center', fontsize=10, style='italic')
+    
+    plt.tight_layout()
+    plt.savefig('charts/judge_cause_effect_difference_table.svg', format='svg')
+    plt.close()
+
+
+
 def create_all_charts():
     """
     Main function that loads data and generates all visualization charts.
@@ -498,10 +772,12 @@ def create_all_charts():
         
         # Generate all charts
         plot_cause_vs_effect(data)
+        plot_cause_vs_effect_across_datasets(data)
         plot_cross_dataset_performance(data)
         plot_human_llm_agreement(data)
         plot_gpqa_correlation(data)
         plot_f1_scores(data)
+        plot_judge_cause_effect_comparison(data)
         
         print("All charts saved to the 'charts' directory")
     except Exception as e:
