@@ -69,7 +69,6 @@ GROK_MODELS = {
     "grok3": "grok-3-latest",
 }
 
-# Create prompt using concatenation (no string formatting)
 def create_prompt(context):
     """Build prompt by concatenation to avoid string formatting issues"""
     return ("You are a causal-extraction specialist. Identify the cause and effect in the text.\n\n"
@@ -357,7 +356,6 @@ def call_anthropic_claude(context, model_key, api_key=None):
         # Rate limiting
         time.sleep(1.5)
         
-        # Initialize Anthropic client
         client = anthropic.Anthropic(api_key=api_key)
         
         print("Sending request to Anthropic Claude...")
@@ -410,7 +408,6 @@ def call_openai_simple(context, model_key, api_key=None):
         # Rate limiting
         time.sleep(0.5)
         
-        # Initialize OpenAI client
         client = OpenAI(api_key=api_key)
         
         print("Sending request to OpenAI...")
@@ -496,11 +493,9 @@ def call_grok(context, model_key, api_key=None, use_reasoning=False):
             ]
         }
         
-        # Add reasoning parameter if applicable
         if use_reasoning and supports_reasoning:
             request_params["reasoning_effort"] = "high"
         
-        # Make the API call
         response = client.chat.completions.create(**request_params)
         
         # Extract response text
@@ -563,7 +558,6 @@ async def process_openai_batch_simple(batch_contexts, model_key, api_key=None):
                 )
             )
         
-        # Wait for all tasks to complete
         print(f"Processing batch of {len(tasks)} requests...")
         responses = await asyncio.gather(*tasks, return_exceptions=True)
         
@@ -620,7 +614,6 @@ async def process_grok_batch(batch_contexts, model_key, api_key=None, use_reason
         # Create tasks for each context
         tasks = []
         for context in batch_contexts:
-            # Build request parameters
             request_params = {
                 "model": model_id,
                 "temperature": 0,
@@ -639,11 +632,9 @@ async def process_grok_batch(batch_contexts, model_key, api_key=None, use_reason
                 ]
             }
             
-            # Add reasoning parameter if applicable
             if use_reasoning and supports_reasoning:
                 request_params["reasoning_effort"] = "high"
             
-            # Create task
             tasks.append(
                 client.chat.completions.create(**request_params)
             )
@@ -770,7 +761,6 @@ def extract_json(text):
         json_matches = re.findall(json_pattern, text, re.DOTALL)
         
         for match in json_matches:
-            # Try the more flexible patterns on each JSON-like structure
             cause_match = re.search(cause_pattern, match, re.DOTALL)
             if cause_match:
                 cause = cause_match.group(1).strip()
@@ -785,7 +775,6 @@ def extract_json(text):
     # Return results
     return {"cause": cause, "effect": effect}
 
-# Helper function to check if API key is available
 def api_key_available(model_key):
     """Check if the API key for a model is available"""
     if model_key in TOGETHER_MODELS:
@@ -970,7 +959,6 @@ def main():
         print(f"ERROR: Failed to read CSV file: {e}")
         sys.exit(1)
     
-    # Add ID column if not present
     if "id" not in df.columns:
         df["id"] = [f"row{i}" for i in range(len(df))]
     
@@ -978,7 +966,6 @@ def main():
     for model in models:
         print(f"\n======== Processing model: {model} ========")
         
-        # Check if model is supported
         if model not in MODEL_FUNCTIONS:
             print(f"ERROR: Model '{model}' is not supported")
             continue
@@ -990,7 +977,6 @@ def main():
         
         results = []
         
-        # Check if we should use batch processing
         use_batch = args.batch_size > 0 and (
             (model in OPENAI_MODELS) or 
             (model in GROK_MODELS)
@@ -998,11 +984,9 @@ def main():
         
         if use_batch:
             print(f"Using batch processing with batch size {args.batch_size}")
-            # Process in batches
             all_row_ids = df["id"].tolist()
             all_contexts = df.get("Context_masked", df["Context"]).tolist()
             
-            # Process in batches
             for i in range(0, len(df), args.batch_size):
                 batch_row_ids = all_row_ids[i:i+args.batch_size]
                 batch_contexts = all_contexts[i:i+args.batch_size]
@@ -1010,13 +994,11 @@ def main():
                 print(f"\nProcessing batch {i//args.batch_size + 1}/{(len(df)-1)//args.batch_size + 1}")
                 print(f"Batch contains rows {batch_row_ids}")
                 
-                # Strip out any non-string values and replace with empty strings
                 batch_contexts = [
                     str(ctx) if not pd.isna(ctx) else "" 
                     for ctx in batch_contexts
                 ]
                 
-                # Use the appropriate API key and batch function
                 api_key = None
                 batch_results = {}
                 
@@ -1035,7 +1017,6 @@ def main():
                     # Extract JSON
                     extracted = extract_json(raw_response)
                     
-                    # Show extracted data
                     cause_preview = extracted.get("cause", "")[:50] + "..." if len(extracted.get("cause", "")) > 50 else extracted.get("cause", "")
                     effect_preview = extracted.get("effect", "")[:50] + "..." if len(extracted.get("effect", "")) > 50 else extracted.get("effect", "")
                     print(f"Extracted: cause='{cause_preview}', effect='{effect_preview}'")
@@ -1058,7 +1039,6 @@ def main():
                         "raw_response": raw_response
                     }
                     
-                    # Add ground truth if available
                     if row is not None and {"Cause", "Effect"}.issubset(row.index):
                         record["ground"] = {
                             "cause": row["Cause"],
@@ -1085,7 +1065,6 @@ def main():
                 try:
                     row_id = row["id"]
                     
-                    # Get context and handle non-string values
                     context = row.get("Context_masked", row["Context"])
                     
                     # Check for NaN or non-string values
@@ -1131,7 +1110,6 @@ def main():
                         # Extract JSON with improved handling
                         extracted = extract_json(raw_response)
                     
-                    # Show extracted data
                     cause_preview = extracted.get("cause", "")[:50] + "..." if len(extracted.get("cause", "")) > 50 else extracted.get("cause", "")
                     effect_preview = extracted.get("effect", "")[:50] + "..." if len(extracted.get("effect", "")) > 50 else extracted.get("effect", "")
                     print(f"Extracted: cause='{cause_preview}', effect='{effect_preview}'")
@@ -1213,17 +1191,13 @@ def test_anthropic_claude():
     print("Using Anthropic API key from environment")
     
     try:
-        # Initialize Anthropic client
         client = anthropic.Anthropic(api_key=api_key)
         
-        # The model name
         model_id = ANTHROPIC_MODELS["claude"]
         print(f"Testing model: {model_id}")
         
-        # Test prompt
         prompt = create_prompt("The expansion of financial literacy education has led to increased household savings rates.")
         
-        # Create message
         print("Creating message and sending request...")
         response = client.messages.create(
             model=model_id,

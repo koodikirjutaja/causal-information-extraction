@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# shuffle_pairs_by_domain.py
 """
 Create adversarial negatives by swapping cause–effect pairs *within the
 same domain* and rewriting their Context paragraphs.
@@ -258,7 +256,6 @@ def main(infile: Path, outfile: Path, ratio: float, seed: int, debug: bool):
     print(f"   swapped (Label = 1): {n_changed}")
     print(f"   kept    (Label = 0): {len(df_out) - n_changed}")
     
-    # Verify consistency and show some examples
     if "Context_masked" in df_out.columns:
         consistent = 0
         examples = []
